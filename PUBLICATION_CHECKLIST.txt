@@ -1,23 +1,9 @@
-THE SHOWA HOUSE — PUBLICATION CHECKLIST (v2.2)
+THE SHOWA HOUSE — v3.0 PUBLICATION CHECKLIST
 
-READY NOW
-- Main page, Journal page and article template checked.
-- Journal text lost in an earlier edit has been restored.
-- Main navigation includes Journal; the minimal footer remains unchanged.
-- Image dimensions and async decoding added to reduce layout shift.
-- Hero image is prioritized.
-- Keyboard focus, skip links, Escape/outside-click menu closing, and reduced-motion support added.
-- Twitter/Open Graph basics, provisional favicon and 404 page added.
-- Airbnb links simplified to the stable room URL.
-
-AFTER THE FINAL DOMAIN IS CHOSEN
-1. Add an absolute canonical URL to each public page.
-2. Change og:image and twitter:image from relative paths to full https URLs.
-3. Add og:url to each public page.
-4. Create robots.txt and sitemap.xml using the final domain.
-5. Register the site in Google Search Console.
-6. Add analytics only after deciding on a privacy/cookie approach.
-
-IMPORTANT
-The Journal currently says Coming Soon. Keep it in the top menu only if that is intentional at launch.
-The favicon is a quiet provisional SH monogram and can be replaced by the final brand mark later.
+1. Upload all files to the root of theshowahouse.github.io.
+2. Confirm the home page and Journal article open correctly.
+3. Open /robots.txt and /sitemap.xml in a browser.
+4. Submit sitemap.xml in Google Search Console.
+5. Test Airbnb buttons on desktop and mobile.
+6. Share the home page once in a messaging app to confirm the OGP image.
+7. Add GA4 later only after obtaining the real Measurement ID.
