@@ -179,7 +179,7 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
 .subpage-header{position:relative;z-index:20;display:flex;align-items:center;justify-content:space-between;min-height:82px;padding:20px 4vw;border-bottom:1px solid var(--line);background:var(--paper2);color:var(--ink)}
 .wordmark{font-family:var(--serif);font-size:19px;letter-spacing:-.01em;text-decoration:none}
 .subpage-header .nav-panel{color:var(--ink)}
-.nav-panel--dark a{text-shadow:none}
+.nav-panel--dark a{color:var(--ink);text-shadow:none}
 .nav-book--dark{border-color:var(--line);background:transparent}
 
 .journal-intro{max-width:760px;margin:0 auto;padding:34px 24px 26px;text-align:center}
@@ -429,4 +429,338 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
   display:inline-flex;
   font-size:13px;
 }
+}
+
+/* Access */
+
+.access-hero{
+  max-width:980px;
+  margin:auto;
+  padding:96px 6vw 104px;
+  text-align:center;
+}
+.access-hero .eyebrow{margin:0 0 25px}
+.access-hero h1{
+  margin:0;
+  font-family:var(--serif);
+  font-size:clamp(58px,8vw,108px);
+  line-height:.95;
+  font-weight:500;
+  letter-spacing:-.04em;
+}
+.access-hero-subtitle{
+  margin:28px 0 0;
+  font-family:var(--serif);
+  font-size:clamp(23px,2.8vw,38px);
+  line-height:1.2;
+}
+.access-hero-intro{
+  max-width:690px;
+  margin:26px auto 0;
+  color:var(--muted);
+  font-size:15px;
+  line-height:1.85;
+}
+.access-section{padding:104px 6vw}
+.access-section--paper{background:var(--paper)}
+.access-section-heading{max-width:760px;margin:0 0 48px}
+.access-section-heading--centered{margin-right:auto;margin-left:auto;text-align:center}
+.access-section-heading .eyebrow{margin:0 0 18px}
+.access-section-heading h2,.access-position h2,.access-cta h2{
+  margin:0 0 20px;
+  font-family:var(--serif);
+  font-size:clamp(35px,4.2vw,58px);
+  line-height:1.08;
+  font-weight:500;
+  letter-spacing:-.025em;
+}
+.access-section-heading>p:last-child{
+  max-width:650px;
+  color:var(--muted);
+  font-size:15px;
+  line-height:1.8;
+}
+.access-section-heading--centered>p:last-child{margin-right:auto;margin-left:auto}
+.access-facts{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  max-width:1180px;
+  margin:auto;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+.access-fact{padding:43px 38px 45px}
+.access-fact+.access-fact{border-left:1px solid var(--line)}
+.access-fact-number{
+  display:block;
+  min-height:52px;
+  color:var(--wood);
+  font-family:var(--serif);
+  font-size:42px;
+  line-height:1;
+}
+.access-fact h3{
+  margin:16px 0 13px;
+  font-family:var(--serif);
+  font-size:23px;
+  line-height:1.2;
+  font-weight:500;
+}
+.access-fact--text-only h3{margin-top:68px}
+.access-fact p{margin:0;color:var(--muted);font-size:13.5px;line-height:1.75}
+.travel-table-wrap{max-width:920px;border-top:1px solid var(--line)}
+.travel-table{width:100%;border-collapse:collapse;table-layout:fixed}
+.travel-table th,.travel-table td{
+  padding:19px 18px;
+  border-bottom:1px solid var(--line);
+  text-align:left;
+}
+.travel-table thead th{
+  color:var(--muted);
+  font-size:10px;
+  letter-spacing:.17em;
+  text-transform:uppercase;
+}
+.travel-table tbody th{font-family:var(--serif);font-size:18px;font-weight:500}
+.travel-table td{width:38%;color:#51483f;font-size:13px}
+.travel-note{max-width:920px;margin:17px 0 0;color:var(--muted);font-size:10px;line-height:1.6}
+.access-position{
+  display:grid;
+  grid-template-columns:minmax(0,1.15fr) minmax(300px,.85fr);
+  gap:8vw;
+  align-items:center;
+  padding:112px 8vw;
+  background:#e8dfd0;
+}
+.access-position-copy{max-width:680px}
+.access-position-copy .eyebrow{margin:0 0 20px}
+.access-position-copy>p:not(.eyebrow){color:#51483f;font-size:15px;line-height:1.82}
+.route-diagram{
+  max-width:430px;
+  width:100%;
+  margin:0 auto;
+  padding:38px 30px;
+  border:1px solid rgba(41,36,30,.2);
+  background:rgba(251,248,242,.56);
+  text-align:center;
+}
+.route-city{font-family:var(--serif);font-size:28px}
+.route-line{
+  position:relative;
+  display:flex;
+  min-height:104px;
+  flex-direction:column;
+  justify-content:space-around;
+  color:var(--muted);
+  font-size:10px;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+}
+.route-line::before{
+  content:"";
+  position:absolute;
+  width:1px;
+  height:62px;
+  background:rgba(41,36,30,.25);
+}
+.route-line--up{align-items:center}
+.route-line--down{align-items:center}
+.route-home{
+  padding:25px 15px;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+.route-home strong{display:block;font-family:var(--serif);font-size:23px;font-weight:500}
+.route-home span{display:block;margin-top:7px;color:var(--muted);font-size:11px;letter-spacing:.08em}
+.neighborhood-layout{
+  display:grid;
+  grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);
+  gap:8vw;
+  align-items:start;
+  max-width:1120px;
+}
+.neighborhood-lead{margin:0;font-family:var(--serif);font-size:23px;line-height:1.6}
+.neighborhood-list{margin:0;padding:0;list-style:none;border-top:1px solid var(--line)}
+.neighborhood-list li{
+  position:relative;
+  padding:17px 15px 17px 28px;
+  border-bottom:1px solid var(--line);
+  color:#51483f;
+  font-size:14px;
+}
+.neighborhood-list li::before{content:"—";position:absolute;left:0;color:var(--wood)}
+.airport-section{
+  display:grid;
+  grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);
+  gap:8vw;
+}
+.airport-section .access-section-heading{margin:0}
+.airport-copy{max-width:650px;color:#51483f;font-size:15px;line-height:1.85}
+.airport-copy p:first-child{margin-top:0}
+.area-map-card{
+  max-width:1100px;
+  margin:auto;
+  border:1px solid var(--line);
+  background:var(--paper2);
+}
+.area-map{display:block;width:100%;height:auto}
+.area-map-boundary{fill:none;stroke:rgba(113,103,92,.16);stroke-width:1.05;stroke-linecap:round}
+.area-map-water{fill:#e8eff0;stroke:rgba(105,137,142,.18);stroke-width:.85}
+.area-map-water-label{
+  fill:#7b8d8d;
+  font-family:var(--sans);
+  font-size:12px;
+  letter-spacing:.06em;
+}
+.area-map-river{fill:none;stroke:rgba(143,187,194,.64);stroke-width:1.7;stroke-linecap:round}
+.area-map-link{
+  fill:none;
+  stroke:rgba(111,73,50,.42);
+  stroke-width:1.35;
+  stroke-linecap:round;
+  stroke-dasharray:4 8;
+}
+.area-map-link--primary{stroke:rgba(111,73,50,.44)}
+.area-map-link--secondary{stroke:rgba(111,73,50,.27)}
+.area-map-city circle{fill:#584c42}
+.area-map-city text{
+  fill:var(--ink);
+  font-family:var(--serif);
+  font-size:32px;
+}
+.area-map-home-halo{fill:rgba(111,73,50,.13)}
+.area-map-home-ring{fill:none;stroke:rgba(111,73,50,.6);stroke-width:1.6}
+.area-map-home-dot{fill:var(--wood)}
+.area-map-home-name{fill:var(--ink);font-family:var(--serif);font-size:36px}
+.area-map-home-place{
+  fill:var(--muted);
+  font-family:var(--sans);
+  font-size:15px;
+  letter-spacing:.08em;
+}
+.area-map-kicker{
+  fill:var(--muted);
+  font-family:var(--sans);
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:.2em;
+}
+.area-map-north{fill:var(--muted);font-family:var(--sans);font-size:11px}
+.area-map-north path{fill:none;stroke:var(--muted);stroke-width:1.2}
+.area-map-details{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  margin:0;
+  padding:0;
+  border-top:1px solid var(--line);
+  list-style:none;
+}
+.area-map-details li{padding:20px 24px}
+.area-map-details li+li{border-left:1px solid var(--line)}
+.area-map-details span{
+  display:block;
+  margin-bottom:5px;
+  color:var(--muted);
+  font-size:9px;
+  font-weight:700;
+  letter-spacing:.17em;
+  text-transform:uppercase;
+}
+.area-map-details strong{font-family:var(--serif);font-size:17px;font-weight:500}
+.area-map-privacy{
+  margin:0;
+  padding:16px 24px;
+  border-top:1px solid var(--line);
+  color:var(--muted);
+  font-size:10px;
+  letter-spacing:.06em;
+  text-align:center;
+}
+.access-cta{
+  padding:112px 6vw 120px;
+  background:#29241e;
+  color:#f5efe6;
+  text-align:center;
+}
+.access-cta .eyebrow{margin:0 0 24px;color:#c7b9aa}
+.access-cta h2{max-width:800px;margin-right:auto;margin-bottom:20px;margin-left:auto}
+.access-cta-copy{
+  max-width:620px;
+  margin:0 auto 32px;
+  color:#c7b9aa;
+  font-size:14px;
+  line-height:1.75;
+}
+
+@media(min-width:901px) and (max-width:1180px){
+  .subpage-header .nav-panel{gap:14px;padding-right:10px;padding-left:14px;font-size:11px}
+}
+
+@media(max-width:900px){
+  .access-facts{grid-template-columns:1fr}
+  .access-fact+.access-fact{border-top:1px solid var(--line);border-left:0}
+  .access-position,.airport-section{grid-template-columns:1fr}
+  .access-position{gap:60px}
+  .airport-section{gap:40px}
+}
+
+@media(max-width:560px){
+  .access-hero{padding:70px 6.5vw 76px}
+  .access-hero h1{font-size:56px}
+  .access-hero-subtitle{font-size:25px}
+  .access-hero-intro{font-size:14px}
+  .access-section{padding:70px 6.5vw}
+  .access-section-heading{margin-bottom:34px}
+  .access-section-heading h2,.access-position h2,.access-cta h2{font-size:34px}
+  .access-fact{padding:31px 8px 33px}
+  .access-fact-number{min-height:43px;font-size:36px}
+  .access-fact h3{font-size:21px}
+  .access-fact--text-only h3{margin-top:0}
+  .travel-table th,.travel-table td{padding:15px 8px}
+  .travel-table tbody th{font-size:16px}
+  .travel-table td{width:42%;font-size:12px;text-align:right}
+  .access-position{gap:45px;padding:75px 6.5vw}
+  .access-position-copy>p:not(.eyebrow){font-size:14px}
+  .route-diagram{padding:31px 20px}
+  .route-city{font-size:25px}
+  .neighborhood-layout{grid-template-columns:1fr;gap:34px}
+  .neighborhood-lead{font-size:20px}
+  .airport-copy{font-size:14px}
+  .access-cta{padding:79px 6.5vw 84px}
+  .access-cta-copy{max-width:340px;font-size:13px;line-height:1.7}
+  .access-page .access-cta .button{
+    width:auto;
+    min-width:0;
+    padding:9px 14px;
+    display:inline-flex;
+    font-size:13px;
+  }
+}
+
+@media(max-width:400px){
+  .access-page .access-hero{padding:62px 6.5vw 66px}
+  .access-page .access-hero-subtitle{font-size:23px}
+  .access-page .access-section{padding-top:62px;padding-bottom:62px}
+  .access-page .access-section-heading h2,
+  .access-page .access-position h2,
+  .access-page .access-cta h2{font-size:32px}
+  .access-page .travel-table th,
+  .access-page .travel-table td{padding:14px 6px}
+  .access-page .travel-table tbody th{font-size:15px;line-height:1.35}
+  .access-page .travel-table th,
+  .access-page .travel-table td{overflow-wrap:anywhere}
+  .access-page .travel-table td{width:44%;font-size:13px;line-height:1.4}
+  .access-page .access-position{padding:66px 6.5vw}
+  .access-page .route-diagram{max-width:100%;padding:28px 17px}
+  .access-page .area-map-card{width:100%}
+  .access-page .area-map{min-height:0}
+  .access-page .area-map-city text{font-size:34px}
+  .access-page .area-map-home-name{font-size:38px}
+  .access-page .area-map-home-place{font-size:19px}
+  .access-page .area-map-water-label{font-size:16px}
+  .access-page .area-map-details li{padding:15px 8px;text-align:center}
+  .access-page .area-map-details span{font-size:8px;letter-spacing:.12em}
+  .access-page .area-map-details strong{font-size:13px;line-height:1.35}
+  .access-page .area-map-privacy{padding:14px 12px;font-size:10px}
+  .access-page .access-cta{padding:68px 6.5vw 72px}
 }
