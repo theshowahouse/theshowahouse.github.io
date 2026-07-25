@@ -339,3 +339,9 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
 .journal-intro{
   padding:8px 24px 14px;
 }
+.journal-intro{
+    max-width:760px;
+    margin:0 auto;
+    padding:12px 24px 18px;
+    text-align:center;
+}
