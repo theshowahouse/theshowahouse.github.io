@@ -401,3 +401,32 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
     text-align:center;
 }
 }
+/* Smartphone hero refinements */
+@media (max-width: 560px) {
+  /* タイトルを少し小さくして余白を確保 */
+  .hero h1 {
+    font-size: clamp(38px, 10.5vw, 46px);
+    line-height: 0.98;
+    letter-spacing: -0.02em;
+  }
+
+ .tagline{
+  font-size:17px;
+  line-height:1.18;
+}
+
+.hero-detail{
+  font-size:13px;
+  line-height:1.6;
+  max-width:320px;
+  color:rgba(255,255,255,.92);
+}
+
+.hero .button{
+  width:auto;
+  min-width:155px;
+  padding:10px 16px;
+  display:inline-flex;
+  font-size:13px;
+}
+}
