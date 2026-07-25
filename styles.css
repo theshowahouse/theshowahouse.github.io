@@ -346,3 +346,6 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
   }
 
 }
+.journal-intro{
+    padding:0 24px 0;
+}
