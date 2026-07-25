@@ -85,7 +85,7 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
 .nav-book{border:1px solid rgba(255,255,255,.7);padding:10px 15px;border-radius:2px;background:rgba(15,12,9,.14);backdrop-filter:blur(6px)}
 
 .hero{position:relative;min-height:86vh;display:flex;align-items:flex-end;overflow:hidden;background:#40372f}
-.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 53%}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 20%;filter:brightness(1.16)}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,15,10,.4) 0%,rgba(20,15,10,.13) 48%,rgba(20,15,10,.02) 76%),linear-gradient(0deg,rgba(20,15,10,.37),transparent 50%)}
 .hero-copy{position:relative;z-index:2;max-width:980px;padding:0 6vw 8vh;color:#fff;text-shadow:0 2px 18px rgba(0,0,0,.35)}
 .overline,.eyebrow{font-size:11.5px;line-height:1.4;letter-spacing:.25em;font-weight:700}
@@ -93,7 +93,7 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
 .tagline,.story-tagline{font-family:var(--serif);font-size:clamp(19px,1.55vw,25px);line-height:1.18;font-weight:400}
 .tagline{margin:0 0 26px}
 .hero-detail{max-width:560px;margin:-9px 0 25px;color:rgba(255,255,255,.82);font-size:11px;line-height:1.65;letter-spacing:.045em;text-shadow:0 2px 16px rgba(0,0,0,.35)}
-.button{display:inline-flex;align-items:center;gap:12px;padding:12px 17px;border-radius:2px;font: size 11px;px;font-weight:650;letter-spacing:.015em;text-decoration:none}
+.button{display:inline-flex;align-items:center;gap:12px;padding:12px 17px;border-radius:2px;font-size:11px;font-weight:650;letter-spacing:.015em;text-decoration:none}
 .button.light{background:rgba(255,252,246,.96);color:#342a22;text-shadow:none}
 .scroll-cue{position:absolute;z-index:3;right:3vw;bottom:5vh;color:#fff;font-size:11px;letter-spacing:.2em;text-decoration:none;writing-mode:vertical-rl}
 .scroll-cue::after{content:"";display:inline-block;width:1px;height:42px;margin-top:12px;background:rgba(255,255,255,.65)}
@@ -399,4 +399,5 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
     margin:0 auto;
     padding:12px 24px 18px;
     text-align:center;
+}
 }
