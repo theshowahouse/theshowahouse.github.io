@@ -429,6 +429,25 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
   display:inline-flex;
   font-size:13px;
 }
+
+.site-header .nav-panel .nav-book{
+  display:none;
+}
+
+.site-header .nav-panel{
+  left:auto;
+  right:7px;
+  width:max-content;
+  min-width:170px;
+  padding:8px 14px 14px;
+  align-items:stretch;
+}
+
+.site-header .nav-panel a:not(.nav-book){
+  width:100%;
+  padding:9px 4px;
+  text-align:left;
+}
 }
 
 /* Access */
