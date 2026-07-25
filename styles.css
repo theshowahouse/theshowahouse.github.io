@@ -527,3 +527,46 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
   .season:hover img{transform:none}
 }
+/* Journal introduction — quieter and more compact */
+
+.journal-intro {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 72px 6vw 64px;
+  text-align: center;
+}
+
+.journal-intro h1 {
+  margin: 14px 0 18px;
+  font-family: var(--serif);
+  font-size: clamp(34px, 4vw, 52px);
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.journal-intro-text {
+  max-width: 620px;
+  margin: 0 auto;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.journal-list {
+  padding-top: 24px;
+}
+
+@media (max-width: 900px) {
+  .journal-intro {
+    padding: 58px 24px 48px;
+  }
+
+  .journal-intro h1 {
+    font-size: 38px;
+  }
+
+  .journal-list {
+    padding-top: 16px;
+  }
+}
