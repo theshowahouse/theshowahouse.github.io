@@ -787,8 +787,13 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
 /* A Week in Japan */
 .week-page{background:var(--paper2)}
 .week-hero{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(420px,.92fr);min-height:calc(100vh - 82px);background:var(--paper)}
-.week-hero__image{min-height:720px;overflow:hidden}
+.week-hero__image{display:flex;min-height:720px;align-items:center;overflow:hidden;padding:clamp(8px,1.4vw,22px);background:#eee7dc}
 .week-hero__image img{width:100%;height:100%;object-fit:cover;object-position:center}
+.week-hero__map{width:100%;height:auto}
+.week-hero__map .area-map-city text{font-size:34px}
+.week-hero__map .area-map-city--minor text{font-size:27px}
+.week-hero__map .area-map-home-name{font-size:34px}
+.week-hero__map .area-map-home-place{font-size:16px}
 .week-hero__copy{align-self:center;padding:80px clamp(44px,6vw,100px)}
 .week-hero__copy .eyebrow{margin:0 0 22px;color:var(--wood)}
 .week-hero h1{max-width:650px;margin:0;font-family:var(--serif);font-size:clamp(50px,5.8vw,88px);font-weight:500;line-height:.98;letter-spacing:-.035em}
@@ -796,7 +801,7 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
 .week-intro{max-width:580px;color:#51483f;font-family:var(--serif);font-size:17px;line-height:1.85}
 .week-intro p{margin:0 0 15px}
 .week-intro p:nth-child(2){color:var(--ink);font-size:20px;font-style:italic}
-.week-itinerary{max-width:1280px;margin:auto;padding:140px 5vw 90px}
+.week-itinerary{max-width:1280px;margin:auto;padding:110px 5vw 90px}
 .week-day{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(340px,.92fr);gap:clamp(58px,8vw,120px);align-items:center;margin-bottom:150px}
 .week-day:nth-child(even){grid-template-columns:minmax(340px,.92fr) minmax(0,1.08fr)}
 .week-day:nth-child(even) .week-day__media{order:2}
@@ -831,10 +836,10 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
 
 @media(max-width:900px){
   .week-hero{grid-template-columns:1fr;min-height:0}
-  .week-hero__image{min-height:0}
+  .week-hero__image{min-height:0;padding:18px 2.5vw}
   .week-hero__image img{height:auto;max-height:none;object-fit:contain}
   .week-hero__copy{padding:68px 8vw 82px}
-  .week-itinerary{padding-top:95px}
+  .week-itinerary{padding-top:82px}
   .week-day,.week-day:nth-child(even){grid-template-columns:1fr;gap:40px;margin-bottom:100px}
   .week-day:nth-child(even) .week-day__media{order:0}
   .week-day__copy{max-width:680px}
@@ -843,10 +848,11 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
 
 @media(max-width:560px){
   .week-hero__copy{padding:55px 6.5vw 68px}
+  .week-hero__image{padding:10px 1.5vw}
   .week-hero h1{font-size:49px}
   .week-hero__subtitle{margin:20px 0 32px;font-size:22px}
   .week-intro{font-size:16px;line-height:1.78}
-  .week-itinerary{padding:74px 6.5vw 35px}
+  .week-itinerary{padding:68px 6.5vw 35px}
   .week-day,.week-day:nth-child(even){gap:30px;margin-bottom:82px}
   .week-day__media figcaption{font-size:9px}
   .week-day__copy h2{margin-bottom:22px;font-size:37px}
