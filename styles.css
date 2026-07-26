@@ -350,6 +350,7 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
   .footer>div span{font-size:12px;line-height:1.6}
   .footer small{margin-top:10px;text-align:left}
   .footer-links{flex-direction:column;gap:8px;margin-top:2px}
+  .footer-links a[href="#top"]{font-size:12px}
   .nav-panel{left:15px;right:15px;min-width:0}
   .subpage-header{min-height:68px}
   .wordmark{font-size:16px}
