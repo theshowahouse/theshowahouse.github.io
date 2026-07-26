@@ -15,7 +15,7 @@ if (menu && panel) {
   panel.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMenu));
 
   document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape') {
+    if (event.key === 'Escape' && panel.classList.contains('open')) {
       closeMenu();
       menu.focus();
     }
