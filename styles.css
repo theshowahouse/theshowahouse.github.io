@@ -54,13 +54,21 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
 
   box-shadow:0 8px 30px rgba(0,0,0,.20);
 }
-.night-cta .night-back-link{
+.night-cta .night-back-link,.secondary-glass-cta{
   padding:10px 14px;
   border-color:rgba(255,255,255,.24);
   background:rgba(35,30,26,.48);
   backdrop-filter:blur(8px);
   -webkit-backdrop-filter:blur(8px);
   text-decoration:none;
+}
+.night-cta .night-back-link:hover,.secondary-glass-cta:hover{
+  border-color:rgba(255,255,255,.36);
+  background:rgba(35,30,26,.6);
+}
+.night-cta .night-back-link:focus-visible,.secondary-glass-cta:focus-visible{
+  outline-color:#fff;
+  box-shadow:0 8px 30px rgba(0,0,0,.2),0 0 0 1px rgba(255,255,255,.24);
 }
 .nav-panel a{
   position:relative;
