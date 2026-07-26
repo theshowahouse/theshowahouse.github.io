@@ -54,7 +54,14 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
 
   box-shadow:0 8px 30px rgba(0,0,0,.20);
 }
-.night-back-link{padding:10px 14px;text-decoration:none}
+.night-cta .night-back-link{
+  padding:10px 14px;
+  border-color:rgba(255,255,255,.24);
+  background:rgba(35,30,26,.48);
+  backdrop-filter:blur(8px);
+  -webkit-backdrop-filter:blur(8px);
+  text-decoration:none;
+}
 .nav-panel a{
   position:relative;
   text-decoration:none;
