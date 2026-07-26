@@ -53,14 +53,32 @@
 
   <header class="subpage-header">
 
-    <a href="../index.html" class="logo">
+    <a href="../index.html" class="wordmark">
       The Showa House
     </a>
 
-    <nav>
+    <button
+      class="menu-button menu-button--dark"
+      aria-controls="nav-panel"
+      aria-expanded="false">
+      Menu
+    </button>
+
+    <nav class="nav-panel nav-panel--dark" id="nav-panel" aria-label="Main navigation">
       <a href="../index.html">Home</a>
-      <a href="../access.html">Access</a>
+      <a href="../index.html#house">The House</a>
+      <a href="../a-week-in-japan.html">A Week in Japan</a>
       <a href="../journal.html">Journal</a>
+      <a href="../access.html">Access</a>
+      <a href="../index.html#hosts">Contact</a>
+      <a
+        class="nav-book nav-book--dark"
+        href="https://www.airbnb.jp/rooms/9668171"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Book your stay on Airbnb, opens in a new tab">
+        Book your stay
+      </a>
     </nav>
 
   </header>
@@ -244,5 +262,6 @@
     </p>
   </footer>
 
+  <script src="../script.js"></script>
 </body>
 </html>

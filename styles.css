@@ -783,3 +783,83 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
   .access-page .area-map-privacy{padding:14px 12px;font-size:10px}
   .access-page .access-cta{padding:68px 6.5vw 72px}
 }
+
+/* A Week in Japan */
+.week-page{background:var(--paper2)}
+.week-hero{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(420px,.92fr);min-height:calc(100vh - 82px);background:var(--paper)}
+.week-hero__image{min-height:720px;overflow:hidden}
+.week-hero__image img{width:100%;height:100%;object-fit:cover;object-position:center}
+.week-hero__copy{align-self:center;padding:80px clamp(44px,6vw,100px)}
+.week-hero__copy .eyebrow{margin:0 0 22px;color:var(--wood)}
+.week-hero h1{max-width:650px;margin:0;font-family:var(--serif);font-size:clamp(50px,5.8vw,88px);font-weight:500;line-height:.98;letter-spacing:-.035em}
+.week-hero__subtitle{max-width:520px;margin:25px 0 42px;color:var(--wood);font-family:var(--serif);font-size:clamp(21px,2vw,30px);line-height:1.35}
+.week-intro{max-width:580px;color:#51483f;font-family:var(--serif);font-size:17px;line-height:1.85}
+.week-intro p{margin:0 0 15px}
+.week-intro p:nth-child(2){color:var(--ink);font-size:20px;font-style:italic}
+.week-itinerary{max-width:1280px;margin:auto;padding:140px 5vw 90px}
+.week-day{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(340px,.92fr);gap:clamp(58px,8vw,120px);align-items:center;margin-bottom:150px}
+.week-day:nth-child(even){grid-template-columns:minmax(340px,.92fr) minmax(0,1.08fr)}
+.week-day:nth-child(even) .week-day__media{order:2}
+.week-day__media{margin:0}
+.week-day__media img{max-height:660px;object-fit:contain;background:var(--paper)}
+.week-day__media figcaption{margin-top:13px;color:var(--muted);font-size:10px;line-height:1.6;letter-spacing:.04em}
+.week-photo-credit{display:block;margin-top:3px;font-size:8px;letter-spacing:.06em;opacity:.78}
+.week-day__copy{max-width:520px}
+.week-day__number{margin:0 0 13px;color:var(--wood);font-size:10px;font-weight:700;letter-spacing:.22em;text-transform:uppercase}
+.week-day__copy h2{margin:0 0 28px;font-family:var(--serif);font-size:clamp(36px,4vw,59px);font-weight:500;line-height:1.08;letter-spacing:-.025em}
+.week-day__copy>p:not(.week-day__number,.week-day__link){margin:0 0 15px;color:#51483f;font-family:var(--serif);font-size:17px;line-height:1.85}
+.week-day__copy blockquote{margin:28px 0 0;padding:23px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-family:var(--serif);font-size:25px;font-style:italic;line-height:1.5}
+.week-day__link{margin-top:30px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:10px;letter-spacing:.06em}
+.week-day__link a{color:var(--ink);text-underline-offset:4px}
+.week-base{display:grid;grid-template-columns:minmax(0,1fr) minmax(420px,.8fr);gap:9vw;padding:120px 8vw;background:#e8dfd0}
+.week-base__copy{max-width:650px}
+.week-base__copy .eyebrow{margin:0 0 22px}
+.week-base h2,.week-ending h2,.week-cta h2{margin:0 0 30px;font-family:var(--serif);font-size:clamp(42px,5vw,68px);font-weight:500;line-height:1.05;letter-spacing:-.025em}
+.week-base__copy>p:not(.eyebrow){color:#51483f;font-family:var(--serif);font-size:17px;line-height:1.85}
+.week-times{align-self:center;border-top:1px solid rgba(41,36,30,.25)}
+.week-times>div{display:flex;justify-content:space-between;gap:25px;padding:19px 0;border-bottom:1px solid rgba(41,36,30,.18)}
+.week-times strong{font-family:var(--serif);font-size:20px;font-weight:500}
+.week-times span{color:var(--muted);font-size:12px}
+.week-times>p{margin:17px 0 0;color:var(--muted);font-size:9px;line-height:1.65;letter-spacing:.04em}
+.week-ending{max-width:900px;margin:auto;padding:145px 7vw;text-align:center}
+.week-ending .eyebrow{margin:0 0 25px;color:var(--wood)}
+.week-ending>div{max-width:640px;margin:auto;color:#51483f;font-family:var(--serif);font-size:18px;line-height:1.85}
+.week-ending>div p{margin:0 0 21px}
+.week-cta{padding:110px 7vw 115px;background:#29241e;color:#f5efe6;text-align:center}
+.week-cta h2{max-width:830px;margin-right:auto;margin-bottom:18px;margin-left:auto}
+.week-cta p{margin:0 0 30px;color:#c7b9aa;font-family:var(--serif);font-size:16px}
+
+@media(max-width:900px){
+  .week-hero{grid-template-columns:1fr;min-height:0}
+  .week-hero__image{min-height:0}
+  .week-hero__image img{height:auto;max-height:none;object-fit:contain}
+  .week-hero__copy{padding:68px 8vw 82px}
+  .week-itinerary{padding-top:95px}
+  .week-day,.week-day:nth-child(even){grid-template-columns:1fr;gap:40px;margin-bottom:100px}
+  .week-day:nth-child(even) .week-day__media{order:0}
+  .week-day__copy{max-width:680px}
+  .week-base{grid-template-columns:1fr;gap:55px;padding:90px 8vw}
+}
+
+@media(max-width:560px){
+  .week-hero__copy{padding:55px 6.5vw 68px}
+  .week-hero h1{font-size:49px}
+  .week-hero__subtitle{margin:20px 0 32px;font-size:22px}
+  .week-intro{font-size:16px;line-height:1.78}
+  .week-itinerary{padding:74px 6.5vw 35px}
+  .week-day,.week-day:nth-child(even){gap:30px;margin-bottom:82px}
+  .week-day__media figcaption{font-size:9px}
+  .week-day__copy h2{margin-bottom:22px;font-size:37px}
+  .week-day__copy>p:not(.week-day__number,.week-day__link){font-size:16px;line-height:1.78}
+  .week-day__copy blockquote{font-size:22px}
+  .week-base{gap:42px;padding:74px 6.5vw}
+  .week-base h2,.week-ending h2,.week-cta h2{font-size:38px}
+  .week-base__copy>p:not(.eyebrow){font-size:16px;line-height:1.78}
+  .week-times>div{padding:16px 0}
+  .week-times strong{font-size:18px}
+  .week-times span{font-size:11px}
+  .week-ending{padding:85px 6.5vw}
+  .week-ending>div{font-size:16px;line-height:1.8}
+  .week-cta{padding:76px 6.5vw 82px}
+  .week-page .week-cta .button{width:auto;min-width:0;padding:9px 14px;display:inline-flex;font-size:13px}
+}
