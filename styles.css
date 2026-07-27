@@ -213,8 +213,8 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
 .hirakata-copy>.eyebrow{margin-bottom:24px}
 .hirakata-copy>p:not(.eyebrow){color:#51483f;font-size:15px;line-height:1.78}
 
-.night-cta{position:relative;min-height:600px;display:flex;align-items:center;justify-content:center;overflow:hidden;color:#fff;text-align:center}
-.night-cta>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.night-cta{position:relative;min-height:540px;display:flex;align-items:center;justify-content:center;overflow:hidden;color:#fff;text-align:center}
+.night-cta>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 62%}
 .night-overlay{position:absolute;inset:0;background:rgba(10,12,10,.5)}
 .night-copy{position:relative;z-index:2;max-width:860px;padding:42px}
 .night-copy--button-only{display:flex;align-items:center;justify-content:center}
@@ -260,7 +260,6 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
 .article-footer-nav{display:flex;justify-content:space-between;gap:25px;max-width:710px;margin:78px auto 0;padding-top:28px;border-top:1px solid var(--line);font-size:11px}
 .article-footer-nav a{text-decoration:none}
 .journal-airbnb-cta{max-width:710px;margin:48px auto 0;padding-top:25px;border-top:1px solid var(--line);font-size:11px;letter-spacing:.06em;text-align:center}
-.journal-airbnb-cta a{text-underline-offset:5px}
 .journal-airbnb-cta--index{max-width:1180px;margin:0 auto;padding:45px 6vw 70px;border-top:0}
 .journal-airbnb-cta + .article-footer-nav{margin-top:35px}
 .contextual-link{display:inline-block;margin-top:16px;color:var(--ink);font-size:11px;letter-spacing:.04em;text-underline-offset:5px}
@@ -340,10 +339,10 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
   .text-link{margin-top:29px;font-size:11px}
   .hirakata-photo img{min-height:360px;height:48vh}
   .hirakata-copy{padding:60px 6.5vw 64px}
-  .night-cta{min-height:600px;align-items:stretch}
-  .night-cta>img{object-position:50% 50%}
+  .night-cta{min-height:520px;align-items:stretch}
+  .night-cta>img{object-position:50% 62%;transform:scale(1.12)}
   .night-overlay{background:linear-gradient(180deg,rgba(10,12,10,.20) 0%,rgba(10,12,10,.24) 48%,rgba(10,12,10,.52) 100%)}
-  .night-copy--button-only{width:100%;min-height:600px;padding:0 6.5vw 64px;align-items:flex-end;justify-content:center}
+  .night-copy--button-only{width:100%;min-height:520px;padding:0 6.5vw 64px;align-items:flex-end;justify-content:center}
   .footer{gap:14px;padding:44px 6.5vw 30px}
   .footer p{max-width:100%;margin:8px auto;font-size:22px}
   .footer>div strong{font-size:13.5px}
@@ -807,7 +806,8 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
   .airport-copy{font-size:14px}
   .access-cta{padding:79px 6.5vw 84px}
   .access-cta-copy{max-width:340px;font-size:13px;line-height:1.7}
-  .access-cta .button{
+  .access-cta .button,
+  .night-cta .button{
     width:auto;
     min-width:0;
     padding:9px 14px;
