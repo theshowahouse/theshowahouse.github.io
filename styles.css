@@ -265,6 +265,17 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
 .journal-airbnb-cta + .article-footer-nav{margin-top:35px}
 .contextual-link{display:inline-block;margin-top:16px;color:var(--ink);font-size:11px;letter-spacing:.04em;text-underline-offset:5px}
 
+/* Uji journey route map */
+.article-route-map{margin:70px 0}
+.article-route-map img,.journal-card img.uji-route-map-image{width:100%;height:auto;object-fit:contain}
+.journal-card img.uji-route-map-image{aspect-ratio:auto;background:#fff}
+.uji-article-list{margin:20px 0 34px;padding-left:24px}
+.uji-article-list li{padding-left:5px}
+.uji-article-list li+li{margin-top:8px}
+.uji-related-links{margin-top:52px;padding-top:28px;border-top:1px solid var(--line);color:var(--muted);font-size:16px}
+.uji-related-links a{text-underline-offset:5px}
+.uji-related-link-phrase{white-space:nowrap}
+
 /* FAQ */
 .faq-page{background:var(--paper2)}
 .faq-hero{max-width:920px;margin:auto;padding:88px 6vw 92px;text-align:center}
@@ -325,6 +336,9 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
   .faq-list{padding:0 6.5vw 76px}
   .faq-item summary{padding:28px 44px 28px 0;font-size:23px}
   .faq-answer{padding:0 44px 28px 0;font-size:16px;line-height:1.76}
+  .article-route-map{margin:54px 0}
+  .uji-article-list{padding-left:20px}
+  .uji-related-links{width:calc(100% + 20px);margin-top:44px;margin-left:-10px;font-size:15px}
   body{font-size:13px;line-height:1.7}
   .site-header{padding:15px}
   .menu-button{padding:10px 13px}
