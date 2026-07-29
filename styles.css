@@ -276,6 +276,113 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
 .uji-related-links a{text-underline-offset:5px}
 .uji-related-link-phrase{white-space:nowrap}
 
+/* Kyoto day journey */
+.kyoto-day-hero img{width:100%;aspect-ratio:16/10;object-position:center 58%}
+.kyoto-itinerary{
+  max-width:680px;
+  margin:70px auto;
+  padding:38px 44px 36px;
+  border:1px solid var(--line);
+  border-radius:14px;
+  background:#faf8f3;
+  box-sizing:border-box;
+}
+.kyoto-itinerary header{margin-bottom:30px;text-align:center}
+.kyoto-itinerary-kicker{
+  margin:0 0 11px;
+  color:var(--muted);
+  font-size:9px;
+  font-weight:700;
+  letter-spacing:.24em;
+}
+.kyoto-itinerary header h2{
+  margin:0;
+  font-family:var(--serif);
+  font-size:27px;
+  font-weight:500;
+  line-height:1.2;
+}
+.kyoto-itinerary-list{margin:0;padding:0;list-style:none}
+.itinerary-stop{
+  --line-x:95px;
+  position:relative;
+  display:grid;
+  grid-template-columns:68px 26px minmax(0,1fr);
+  column-gap:14px;
+  min-height:118px;
+}
+.itinerary-stop time{
+  padding-top:2px;
+  color:var(--wood);
+  font-family:var(--serif);
+  font-size:18px;
+  font-variant-numeric:tabular-nums;
+  line-height:1.2;
+}
+.itinerary-marker{
+  position:relative;
+  display:block;
+  width:15px;
+  height:15px;
+  margin:4px auto 0;
+  border:3px solid #718166;
+  border-radius:50%;
+  background:#faf8f3;
+}
+.itinerary-stop:not(.itinerary-stop--last) .itinerary-marker::after{
+  content:"";
+  position:absolute;
+  top:18px;
+  left:50%;
+  height:84px;
+  transform:translateX(-50%);
+  border-left:2px solid #45413c;
+}
+.itinerary-stop.itinerary-stop--walk .itinerary-marker::after{
+  border-left-color:#718166;
+  border-left-style:dashed;
+}
+.itinerary-stop h3{
+  margin:0;
+  font-family:var(--serif);
+  font-size:20px;
+  font-weight:500;
+  letter-spacing:.04em;
+  line-height:1.2;
+  text-transform:uppercase;
+}
+.itinerary-stop p{margin:7px 0 0;color:var(--muted);font-size:14px;line-height:1.55}
+.itinerary-transport{
+  position:absolute;
+  z-index:1;
+  top:55px;
+  left:calc(var(--line-x) + 9px);
+  display:block;
+  margin:0;
+  padding:3px 5px;
+  background:#faf8f3;
+  color:#666159;
+  font-size:9px;
+  font-weight:700;
+  letter-spacing:.09em;
+  line-height:1.2;
+  white-space:nowrap;
+  text-transform:uppercase;
+}
+.itinerary-stop--walk .itinerary-transport{color:#718166}
+.itinerary-stop--last{min-height:0}
+.itinerary-stop--last .itinerary-marker{border-color:var(--wood);background:var(--wood)}
+.kyoto-day-page .article-body blockquote{
+  margin-bottom:62px;
+  padding-bottom:12px;
+  border-bottom:0;
+}
+.kyoto-day-page .uji-related-links{
+  margin-top:0;
+  padding-top:0;
+  border-top:0;
+}
+
 /* FAQ */
 .faq-page{background:var(--paper2)}
 .faq-hero{max-width:920px;margin:auto;padding:88px 6vw 92px;text-align:center}
@@ -339,6 +446,18 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
   .article-route-map{margin:54px 0}
   .uji-article-list{padding-left:20px}
   .uji-related-links{width:calc(100% + 20px);margin-top:44px;margin-left:-10px;font-size:15px}
+  .kyoto-itinerary{width:80%;margin:50px auto;padding:27px 16px 26px}
+  .kyoto-itinerary header{margin-bottom:25px}
+  .kyoto-itinerary-kicker{margin-bottom:9px;font-size:8px}
+  .kyoto-itinerary header h2{font-size:22px;line-height:1.25}
+  .itinerary-stop{--line-x:60px;grid-template-columns:42px 20px minmax(0,1fr);column-gap:8px;min-height:104px}
+  .itinerary-stop time{font-size:16px}
+  .itinerary-marker{width:13px;height:13px;border-width:2px}
+  .itinerary-stop:not(.itinerary-stop--last) .itinerary-marker::after{top:15px;height:75px}
+  .itinerary-stop h3{font-size:16px;letter-spacing:.02em}
+  .itinerary-stop p{margin-top:6px;font-size:12px;line-height:1.45}
+  .itinerary-transport{top:48px;left:calc(var(--line-x) + 6px);padding:2px 4px;font-size:8px;letter-spacing:.07em}
+  .itinerary-stop--last{min-height:0}
   body{font-size:13px;line-height:1.7}
   .site-header{padding:15px}
   .menu-button{padding:10px 13px}
@@ -408,6 +527,7 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
   .article-shell{padding:76px 6vw 88px}
   .article-header{margin-bottom:43px}
   .article-header h1{font-size:clamp(36px,10.6vw,48px)}
+  .kyoto-day-page .article-header h1{font-size:38px;overflow-wrap:anywhere}
   .article-deck{font-size:16px}
   .article-hero{margin-bottom:48px}
   .article-body{font-size:16px;line-height:1.82}
