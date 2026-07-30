@@ -269,6 +269,8 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
 .where-we-like-to-eat-page .restaurant-collage-hero__grid img:nth-child(3){object-position:center 43%}
 .article-body{max-width:710px;margin:auto;font-family:var(--serif);font-size:18px;line-height:1.9}
 .article-body h2{margin:58px 0 18px;font-size:29px;line-height:1.25;font-weight:500}
+.food-guide-page .article-body .food-store-heading{margin-top:72px}
+.food-guide-page .article-body .food-store-label{margin:-7px 0 20px;color:var(--muted);font-family:var(--sans);font-size:13px;line-height:1.5;letter-spacing:.02em}
 .article-body blockquote{margin:55px 0;padding:30px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-size:25px;line-height:1.55;text-align:center}
 .article-footer-nav{display:flex;justify-content:space-between;gap:25px;max-width:710px;margin:78px auto 0;padding-top:28px;border-top:1px solid var(--line);font-size:11px}
 .article-footer-nav a{text-decoration:none}
@@ -548,6 +550,8 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
   .where-we-like-to-eat-page .restaurant-collage-hero__grid{grid-template-rows:240px 120px;gap:3px;max-height:none;aspect-ratio:auto}
   .article-body{font-size:16px;line-height:1.82}
   .article-body h2{margin-top:44px;font-size:25px}
+  .food-guide-page .article-body .food-store-heading{margin-top:56px}
+  .food-guide-page .article-body .food-store-label{font-size:12px}
   .article-body blockquote{margin:43px 0;font-size:21px}
   .article-footer-nav{margin-top:58px}
 }
