@@ -127,6 +127,7 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
 .tagline,.story-tagline{font-family:var(--serif);font-size:clamp(19px,1.55vw,25px);line-height:1.18;font-weight:400}
 .tagline{margin:0 0 26px}
 .hero-detail{max-width:560px;margin:-9px 0 25px;color:rgba(255,255,255,.82);font-size:11px;line-height:1.65;letter-spacing:.045em;text-shadow:0 2px 16px rgba(0,0,0,.35)}
+.booking-seasonal-note{margin:0 0 10px;color:rgba(255,255,255,.86);font-size:10.5px;line-height:1.5;letter-spacing:.045em;text-shadow:0 2px 16px rgba(0,0,0,.35)}
 .button{display:inline-flex;align-items:center;gap:12px;padding:12px 17px;border-radius:2px;font-size:11px;font-weight:650;letter-spacing:.015em;text-decoration:none}
 .button.light{background:rgba(255,252,246,.96);color:#342a22;text-shadow:none}
 .booking-note{max-width:430px;margin:13px 0 0;color:rgba(255,255,255,.78);font-size:11px;line-height:1.55;text-shadow:0 2px 16px rgba(0,0,0,.35)}
