@@ -125,12 +125,9 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
 .overline,.eyebrow{font-size:11.5px;line-height:1.4;letter-spacing:.25em;font-weight:700}
 .hero h1{margin:15px 0;font-family:var(--serif);font-size:clamp(44px,4.7vw,70px);line-height:1;font-weight:500;letter-spacing:-.025em;white-space:nowrap}
 .tagline,.story-tagline{font-family:var(--serif);font-size:clamp(19px,1.55vw,25px);line-height:1.18;font-weight:400}
-.tagline{margin:0 0 26px}
-.hero-detail{max-width:560px;margin:-9px 0 25px;color:rgba(255,255,255,.82);font-size:11px;line-height:1.65;letter-spacing:.045em;text-shadow:0 2px 16px rgba(0,0,0,.35)}
+.tagline{margin:0 0 22px}
 .button{display:inline-flex;align-items:center;gap:12px;padding:12px 17px;border-radius:2px;font-size:11px;font-weight:650;letter-spacing:.015em;text-decoration:none}
 .button.light{background:rgba(255,252,246,.96);color:#342a22;text-shadow:none}
-.booking-note{max-width:430px;margin:13px 0 0;color:rgba(255,255,255,.78);font-size:11px;line-height:1.55;text-shadow:0 2px 16px rgba(0,0,0,.35)}
-.booking-detail-note{display:block;margin-top:5px;font-size:10.5px;color:rgba(255,255,255,.72)}
 .scroll-cue{position:absolute;z-index:3;right:3vw;bottom:5vh;color:#fff;font-size:11px;letter-spacing:.2em;text-decoration:none;writing-mode:vertical-rl}
 .scroll-cue::after{content:"";display:inline-block;width:1px;height:42px;margin-top:12px;background:rgba(255,255,255,.65)}
 
@@ -290,9 +287,9 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
 /* Uji journey route map */
 .article-route-map{margin:70px 0}
 .article-route-map img,.journal-card img.uji-route-map-image{width:100%;height:auto;object-fit:contain}
-.autumn-guide-route-link{display:block;cursor:pointer;transition:opacity .2s ease}
-.autumn-guide-route-link:hover{opacity:.88}
-.autumn-guide-route-link:focus-visible{outline:2px solid currentColor;outline-offset:4px}
+.autumn-guide-route-link,.uji-route-map-link{display:block;cursor:pointer;transition:opacity .2s ease}
+.autumn-guide-route-link:hover,.uji-route-map-link:hover{opacity:.88}
+.autumn-guide-route-link:focus-visible,.uji-route-map-link:focus-visible{outline:2px solid currentColor;outline-offset:4px}
 .journal-card img.uji-route-map-image{aspect-ratio:auto;background:#fff}
 .uji-article-list{margin:20px 0 34px;padding-left:24px}
 .uji-article-list li{padding-left:5px}
@@ -493,8 +490,6 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
   .overline,.eyebrow{font-size:9px;letter-spacing:.23em}
   .hero h1{margin:12px 0 14px;font-size:clamp(34px,10.8vw,46px);line-height:1.02;white-space:nowrap}
   .tagline,.story-tagline{font-size:19px}
-  .hero-detail{max-width:310px;margin:-6px 0 22px;font-size:9px;line-height:1.6}
-  .hero-detail br{display:none}
   .button{width:100%;justify-content:center;padding:12px 14px}
   .stay-essentials-list{grid-template-columns:1fr}
   .stay-essentials-list li:nth-child(even){padding-left:0;border-left:0}
@@ -668,13 +663,6 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
  .tagline{
   font-size:17px;
   line-height:1.18;
-}
-
-.hero-detail{
-  font-size:13px;
-  line-height:1.6;
-  max-width:320px;
-  color:rgba(255,255,255,.92);
 }
 
 .hero .button{
