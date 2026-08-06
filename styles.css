@@ -265,7 +265,11 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
 .where-we-like-to-eat-page .restaurant-collage-hero__grid img:nth-child(2){object-position:center}
 .where-we-like-to-eat-page .restaurant-collage-hero__grid img:nth-child(3){object-position:center 43%}
 .article-body{max-width:710px;margin:auto;font-family:var(--serif);font-size:18px;line-height:1.9}
+.notebook-intro__title{margin:0 0 12px;font-family:var(--serif);font-size:21px;line-height:1.35;font-weight:500;letter-spacing:.01em}
+.notebook-intro__note{margin:0 0 34px;color:var(--muted);font-size:16px;line-height:1.75}
+.travel-essay-page .essay-series-label{margin:0 0 10px;color:var(--muted);font-family:var(--serif);font-size:14px;font-style:italic;line-height:1.4;letter-spacing:.035em}
 .article-body h2{margin:58px 0 18px;font-size:29px;line-height:1.25;font-weight:500}
+.travel-essay-page .article-body .essay-subheading{margin:34px 0 14px;font-family:var(--serif);font-size:21px;line-height:1.35;font-weight:500}
 .food-guide-page .article-body .food-store-heading{margin-top:72px}
 .food-guide-page .article-body .food-store-label{margin:-7px 0 20px;color:var(--muted);font-family:var(--sans);font-size:13px;line-height:1.5;letter-spacing:.02em}
 .food-guide-page .food-store-photo{aspect-ratio:3/2;overflow:hidden}
@@ -552,7 +556,11 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
   .article-hero{margin-bottom:48px}
   .where-we-like-to-eat-page .restaurant-collage-hero__grid{grid-template-rows:240px 120px;gap:3px;max-height:none;aspect-ratio:auto}
   .article-body{font-size:16px;line-height:1.82}
+  .notebook-intro__title{margin-bottom:10px;font-size:19px}
+  .notebook-intro__note{margin-bottom:28px;font-size:15px;line-height:1.7}
+  .travel-essay-page .essay-series-label{margin-bottom:8px;font-size:13px}
   .article-body h2{margin-top:44px;font-size:25px}
+  .travel-essay-page .article-body .essay-subheading{margin-top:28px;font-size:19px}
   .food-guide-page .article-body .food-store-heading{margin-top:56px}
   .food-guide-page .article-body .food-store-label{font-size:12px}
   .article-body blockquote{margin:43px 0;font-size:21px}
