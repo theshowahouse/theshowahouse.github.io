@@ -584,6 +584,135 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
   .season:hover img{transform:none}
 }
+
+/* Where to Stay travel guide */
+.travel-guide-page{background:var(--paper)}
+.stay-guide-hero{display:grid;grid-template-columns:minmax(0,.92fr) minmax(430px,1.08fr);min-height:720px;background:var(--paper2)}
+.stay-guide-hero__copy{align-self:center;padding:95px clamp(45px,7vw,115px)}
+.stay-guide-home-link{display:inline-block;margin:0 0 28px;color:var(--muted);font-size:11px;letter-spacing:.06em;text-decoration:none;text-underline-offset:4px}
+.stay-guide-home-link:hover{text-decoration:underline}
+.stay-guide-home-link:focus-visible{outline:2px solid var(--wood);outline-offset:5px}
+.stay-guide-hero__copy .eyebrow{margin:0 0 22px}
+.stay-guide-hero h1{max-width:720px;margin:0;font-family:var(--serif);font-size:clamp(52px,5.7vw,84px);font-weight:500;line-height:.99;letter-spacing:-.035em}
+.stay-guide-hero__subtitle{max-width:580px;margin:28px 0 35px;color:var(--wood);font-family:var(--serif);font-size:clamp(20px,2vw,28px);line-height:1.4}
+.stay-guide-hero__intro{max-width:600px;color:#51483f;font-family:var(--serif);font-size:16px;line-height:1.82}
+.stay-guide-hero__intro p{margin:0 0 14px}
+.stay-guide-hero__media{display:flex;flex-direction:column;justify-content:center;margin:0;padding:clamp(12px,2vw,28px);background:#e9e1d6}
+.stay-guide-hero__media img{width:100%;height:100%;max-height:720px;object-fit:cover;object-position:center}
+.stay-guide-hero__media figcaption,.stay-guide-photo figcaption,.stay-guide-route-map figcaption,.stay-guide-example figcaption{margin-top:11px;color:var(--muted);font-size:11px;line-height:1.6;letter-spacing:.04em}
+.stay-guide-section{padding:115px 7vw}
+.stay-guide-section--paper{background:var(--paper2)}
+.stay-guide-heading{max-width:780px;margin:0 auto 55px;text-align:center}
+.stay-guide-heading .eyebrow,.stay-guide-copy .eyebrow,.stay-guide-example .eyebrow{margin:0 0 18px}
+.stay-guide-heading h2,.stay-guide-copy h2,.stay-guide-example h2{margin:0 0 22px;font-family:var(--serif);font-size:clamp(38px,4.4vw,62px);font-weight:500;line-height:1.08;letter-spacing:-.025em}
+.stay-guide-heading>p:not(.eyebrow),.stay-guide-copy>p:not(.eyebrow),.stay-guide-example__copy>p:not(.eyebrow){color:#51483f;font-family:var(--serif);font-size:17px;line-height:1.82}
+.stay-guide-decision{background:#e8dfd0}
+.stay-decision-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;max-width:1120px;margin:auto;background:rgba(41,36,30,.18);border:1px solid rgba(41,36,30,.18)}
+.stay-decision-grid article{display:flex;min-height:165px;flex-direction:column;justify-content:space-between;padding:28px;background:var(--paper2)}
+.stay-decision-grid p{margin:0;color:#51483f;font-family:var(--serif);font-size:18px;line-height:1.5}
+.stay-decision-grid strong{margin-top:20px;color:var(--wood);font-size:11px;letter-spacing:.17em;text-transform:uppercase}
+.stay-guide-section--split{display:grid;grid-template-columns:minmax(0,1fr) minmax(390px,.9fr);gap:clamp(55px,8vw,120px);align-items:center}
+.stay-guide-copy{max-width:650px}
+.stay-guide-steps{display:flex;flex-wrap:wrap;gap:8px;margin:28px 0 30px;padding:0;list-style:none}
+.stay-guide-steps li{padding:8px 11px;border:1px solid var(--line);color:var(--muted);font-size:11px;letter-spacing:.05em}
+.stay-guide-photo{margin:0}
+.stay-guide-photo img{width:100%;max-height:620px;object-fit:cover}
+.stay-comparison-wrap{max-width:1180px;margin:auto}
+.stay-comparison-table{width:100%;border-collapse:collapse;background:var(--paper2)}
+.stay-comparison-table caption{margin-bottom:17px;color:var(--muted);font-size:11px;line-height:1.6;letter-spacing:.05em;text-align:left}
+.stay-comparison-table th,.stay-comparison-table td{padding:22px 24px;border:1px solid var(--line);text-align:left;vertical-align:top}
+.stay-comparison-table thead th{background:#e8dfd0;color:var(--ink);font-family:var(--serif);font-size:18px;font-weight:500}
+.stay-comparison-table tbody th{width:19%;color:var(--wood);font-size:11px;letter-spacing:.13em;text-transform:uppercase}
+.stay-comparison-table td{color:#51483f;font-family:var(--serif);font-size:16px;line-height:1.55}
+.stay-guide-verdicts{max-width:820px;margin:55px auto 0;text-align:center}
+.stay-guide-verdicts>p{margin:0 0 10px;color:#51483f;font-family:var(--serif);font-size:18px;line-height:1.7}
+.stay-guide-verdicts blockquote{margin:38px 0 0;padding:28px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-family:var(--serif);font-size:clamp(24px,3vw,36px);font-style:italic;line-height:1.4}
+.stay-corridor-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;max-width:1100px;margin:auto}
+.stay-corridor-grid article{padding:30px;border:1px solid var(--line);background:var(--paper)}
+.stay-corridor-grid span,.stay-itinerary-links span{color:var(--wood);font-size:10px;font-weight:700;letter-spacing:.18em}
+.stay-corridor-grid h3,.stay-itinerary-links h3{margin:12px 0 14px;font-family:var(--serif);font-size:23px;font-weight:500;line-height:1.25}
+.stay-corridor-grid p,.stay-itinerary-links p{margin:0;color:var(--muted);font-size:13px;line-height:1.75}
+.stay-guide-route-map{max-width:820px;margin:65px auto 0}
+.stay-guide-route-map a{display:block;transition:opacity .2s ease}
+.stay-guide-route-map a:hover{opacity:.84}
+.stay-guide-route-map img{width:100%;border:1px solid var(--line)}
+.stay-itinerary-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;max-width:1000px;margin:auto}
+.stay-itinerary-links a{display:flex;min-height:260px;flex-direction:column;padding:38px;border:1px solid var(--line);background:var(--paper2);text-decoration:none}
+.stay-itinerary-links p{margin-bottom:28px}
+.stay-itinerary-links strong{margin-top:auto;font-size:11px;letter-spacing:.05em}
+.stay-guide-related-note{max-width:760px;margin:34px auto 0;color:var(--muted);font-family:var(--serif);font-size:15px;line-height:1.75;text-align:center}
+.stay-guide-slow{background:#e8dfd0}
+.stay-guide-check{background:var(--paper2)}
+.stay-checklist{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;max-width:980px;margin:0 auto;padding:0;list-style:none}
+.stay-checklist li{position:relative;padding:20px 22px 20px 57px;border:1px solid var(--line);font-family:var(--serif);font-size:17px;line-height:1.5}
+.stay-checklist li::before{position:absolute;top:20px;left:22px;width:18px;height:18px;border:1px solid var(--muted);content:""}
+.stay-check-result{max-width:760px;margin:38px auto 0;color:var(--ink);font-family:var(--serif);font-size:22px;line-height:1.6;text-align:center}
+.stay-guide-example{display:grid;grid-template-columns:minmax(0,.9fr) minmax(420px,1.1fr);gap:8vw;align-items:center;padding:120px 8vw;background:#e8dfd0}
+.stay-guide-example__copy{max-width:650px}
+.stay-guide-example__copy ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px 25px;margin:26px 0 33px;padding:0;list-style:none}
+.stay-guide-example__copy li{padding-bottom:8px;border-bottom:1px solid rgba(41,36,30,.17);color:var(--muted);font-size:12px;line-height:1.5}
+.stay-guide-example figure{margin:0}
+.stay-guide-example img{width:100%;max-height:680px;object-fit:cover}
+.stay-guide-ending{padding:135px 7vw;text-align:center}
+.stay-guide-ending h2{max-width:900px;margin:0 auto 20px;font-family:var(--serif);font-size:clamp(42px,5.5vw,76px);font-weight:500;line-height:1.04;letter-spacing:-.03em}
+.stay-guide-ending p{margin:0;color:var(--wood);font-family:var(--serif);font-size:clamp(23px,3vw,38px);line-height:1.35}
+.home-guide-promo-section{background:var(--paper2)}
+.home-guide-promo{display:grid;grid-template-columns:minmax(0,.85fr) minmax(360px,1.15fr);gap:7vw;align-items:center;padding:95px 8vw;color:var(--ink);text-decoration:none;transition:background-color .2s ease}
+.home-guide-promo:hover{background:#f0e9de}
+.home-guide-promo:focus-visible{outline:2px solid var(--wood);outline-offset:-8px}
+.home-guide-promo__copy{max-width:620px}
+.home-guide-promo h2{margin:12px 0 20px;font-family:var(--serif);font-size:clamp(35px,4vw,55px);font-weight:500;line-height:1.08}
+.home-guide-promo p:not(.eyebrow){color:#51483f;font-family:var(--serif);font-size:17px;line-height:1.8}
+.home-guide-promo .home-guide-promo__prompt{margin-top:-5px;color:var(--muted);font-size:14px;line-height:1.7}
+.home-guide-promo__button{display:inline-flex;min-height:44px;align-items:center;margin-top:15px;padding:12px 18px;border:1px solid var(--ink);border-radius:2px;background:var(--ink);color:var(--paper2);font-size:11px;font-weight:650;letter-spacing:.025em}
+.home-guide-promo img{width:100%;max-height:480px;object-fit:cover}
+.journal-featured-guide{display:grid;grid-template-columns:minmax(300px,.85fr) minmax(0,1.15fr);max-width:1180px;margin:30px auto 22px;border:1px solid var(--line);background:#e8dfd0}
+.journal-featured-guide img{width:100%;height:100%;min-height:340px;object-fit:cover}
+.journal-featured-guide__copy{align-self:center;padding:45px clamp(34px,5vw,70px)}
+.journal-featured-guide__copy h2{margin:10px 0 17px;font-family:var(--serif);font-size:clamp(30px,3vw,44px);font-weight:500;line-height:1.1}
+.journal-featured-guide__copy>p:not(.journal-meta){color:#51483f;font-family:var(--serif);font-size:16px;line-height:1.75}
+.journal-featured-guide__copy a{display:inline-block;margin-top:13px;font-size:11px;letter-spacing:.06em;text-decoration:none}
+
+@media(max-width:900px){
+  .stay-guide-hero,.stay-guide-section--split,.stay-guide-example,.home-guide-promo{grid-template-columns:1fr}
+  .stay-guide-hero__media{min-height:520px}
+  .stay-guide-section--split,.stay-guide-example{gap:55px}
+  .stay-guide-slow .stay-guide-photo{order:2}
+  .stay-decision-grid,.stay-corridor-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+
+@media(max-width:700px){
+  .stay-guide-hero__copy{padding:70px 6.5vw 55px}
+  .stay-guide-home-link{min-height:44px;margin-bottom:18px;padding:13px 4px 10px}
+  .stay-guide-hero h1{font-size:clamp(42px,12vw,58px)}
+  .stay-guide-hero__media{min-height:0;padding:12px}
+  .stay-guide-hero__media img{height:auto;max-height:none;aspect-ratio:4/3}
+  .stay-guide-section{padding:78px 6.5vw}
+  .stay-guide-heading{margin-bottom:38px;text-align:left}
+  .stay-decision-grid,.stay-corridor-grid,.stay-itinerary-links,.stay-checklist{grid-template-columns:1fr}
+  .stay-decision-grid article{min-height:0;padding:23px}
+  .stay-decision-grid p{font-size:17px}
+  .stay-comparison-table,.stay-comparison-table tbody,.stay-comparison-table tr,.stay-comparison-table th,.stay-comparison-table td{display:block;width:100%}
+  .stay-comparison-table thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+  .stay-comparison-table{background:transparent}
+  .stay-comparison-table caption{margin-bottom:20px}
+  .stay-comparison-table tbody tr{margin-bottom:18px;border:1px solid var(--line);background:var(--paper2)}
+  .stay-comparison-table tbody th{padding:17px 19px;border:0;border-bottom:1px solid var(--line);background:#e8dfd0}
+  .stay-comparison-table td{padding:17px 19px;border:0;border-bottom:1px solid var(--line)}
+  .stay-comparison-table td:last-child{border-bottom:0}
+  .stay-comparison-table td::before{display:block;margin-bottom:6px;color:var(--muted);content:attr(data-label);font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+  .stay-guide-verdicts{text-align:left}
+  .stay-guide-verdicts blockquote{text-align:center}
+  .stay-itinerary-links a{min-height:0;padding:29px}
+  .stay-guide-example{padding:82px 6.5vw}
+  .stay-guide-example__copy ul{grid-template-columns:1fr}
+  .stay-guide-ending{padding:92px 6.5vw}
+  .home-guide-promo{padding:76px 6.5vw}
+  .home-guide-promo__button{width:100%;justify-content:center;margin-top:10px;padding:13px 16px}
+  .journal-featured-guide{grid-template-columns:1fr;margin:18px 0 20px}
+  .journal-featured-guide img{min-height:0;aspect-ratio:16/10}
+  .journal-featured-guide__copy{padding:30px 24px 34px}
+}
 /* Journal intro — tighter spacing */
 
 .journal-intro{
