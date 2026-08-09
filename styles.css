@@ -588,17 +588,19 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
 /* Where to Stay travel guide */
 .travel-guide-page{background:var(--paper)}
 .stay-guide-hero{display:grid;grid-template-columns:minmax(0,.92fr) minmax(430px,1.08fr);min-height:720px;background:var(--paper2)}
-.stay-guide-hero__copy{align-self:center;padding:95px clamp(45px,7vw,115px)}
-.stay-guide-home-link{display:inline-block;margin:0 0 28px;color:var(--muted);font-size:11px;letter-spacing:.06em;text-decoration:none;text-underline-offset:4px}
-.stay-guide-home-link:hover{text-decoration:underline}
+.stay-guide-hero__copy{min-width:0;align-self:center;padding:95px clamp(45px,7vw,115px)}
+.stay-guide-home-link{display:inline-block;margin:0 0 28px;color:var(--muted);font-size:11px;letter-spacing:.06em;text-decoration:none;text-underline-offset:4px;transition:color .2s ease}
+.stay-guide-home-link:hover{color:var(--ink);text-decoration:underline}
 .stay-guide-home-link:focus-visible{outline:2px solid var(--wood);outline-offset:5px}
+.stay-guide-label{display:block;width:max-content;margin:0 0 18px;padding:6px 9px;border:1px solid var(--wood);color:var(--wood);font-size:10px;font-weight:700;line-height:1;letter-spacing:.18em}
 .stay-guide-hero__copy .eyebrow{margin:0 0 22px}
 .stay-guide-hero h1{max-width:720px;margin:0;font-family:var(--serif);font-size:clamp(52px,5.7vw,84px);font-weight:500;line-height:.99;letter-spacing:-.035em}
 .stay-guide-hero__subtitle{max-width:580px;margin:28px 0 35px;color:var(--wood);font-family:var(--serif);font-size:clamp(20px,2vw,28px);line-height:1.4}
 .stay-guide-hero__intro{max-width:600px;color:#51483f;font-family:var(--serif);font-size:16px;line-height:1.82}
 .stay-guide-hero__intro p{margin:0 0 14px}
 .stay-guide-hero__media{display:flex;flex-direction:column;justify-content:center;margin:0;padding:clamp(12px,2vw,28px);background:#e9e1d6}
-.stay-guide-hero__media img{width:100%;height:100%;max-height:720px;object-fit:cover;object-position:center}
+.stay-guide-hero__crop{width:100%;height:100%;max-height:720px;overflow:hidden}
+.stay-guide-hero__media img{width:100%;height:100%;object-fit:cover;object-position:62% center}
 .stay-guide-hero__media figcaption,.stay-guide-photo figcaption,.stay-guide-route-map figcaption,.stay-guide-example figcaption{margin-top:11px;color:var(--muted);font-size:11px;line-height:1.6;letter-spacing:.04em}
 .stay-guide-section{padding:115px 7vw}
 .stay-guide-section--paper{background:var(--paper2)}
@@ -675,6 +677,7 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
 
 @media(max-width:900px){
   .stay-guide-hero,.stay-guide-section--split,.stay-guide-example,.home-guide-promo{grid-template-columns:1fr}
+  .stay-guide-hero{grid-template-columns:minmax(0,1fr)}
   .stay-guide-hero__media{min-height:520px}
   .stay-guide-section--split,.stay-guide-example{gap:55px}
   .stay-guide-slow .stay-guide-photo{order:2}
@@ -686,7 +689,8 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
   .stay-guide-home-link{min-height:44px;margin-bottom:18px;padding:13px 4px 10px}
   .stay-guide-hero h1{font-size:clamp(42px,12vw,58px)}
   .stay-guide-hero__media{min-height:0;padding:12px}
-  .stay-guide-hero__media img{height:auto;max-height:none;aspect-ratio:4/3}
+  .stay-guide-hero__crop{height:auto;max-height:none;aspect-ratio:4/3}
+  .stay-guide-hero__media img{object-position:center}
   .stay-guide-section{padding:78px 6.5vw}
   .stay-guide-heading{margin-bottom:38px;text-align:left}
   .stay-decision-grid,.stay-corridor-grid,.stay-itinerary-links,.stay-checklist{grid-template-columns:1fr}
