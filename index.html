@@ -31,6 +31,17 @@ Supporting principles:
 <html lang="en">
 <head>
 
+  <!-- Keep the homepage on one canonical URL before analytics loads. -->
+  <script>
+    if (window.location.pathname.endsWith("/index.html")) {
+      window.location.replace(
+        window.location.pathname.slice(0, -"index.html".length) +
+          window.location.search +
+          window.location.hash
+      );
+    }
+  </script>
+
   <!-- Google tag (gtag.js) -->
   <script
     async
@@ -211,7 +222,7 @@ Supporting principles:
     </button>
 
     <nav class="nav-panel" id="nav-panel" aria-label="Main navigation">
-      <a href="index.html" aria-current="page">Home</a>
+      <a href="/" aria-current="page">Home</a>
       <a href="a-week-in-japan.html">A Week at The Showa House</a>
       <a href="travel-guide/">Travel Guide</a>
       <a href="life-in-japan/">Life in Japan</a>
