@@ -297,6 +297,8 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
 /* Uji journey route map */
 .article-route-map{margin:70px 0}
 .article-route-map img,.journal-card img.uji-route-map-image{width:100%;height:auto;object-fit:contain}
+.article-map-embed{width:100%;max-width:100%;overflow:hidden}
+.article-map-embed iframe{display:block;width:100%;height:clamp(360px,60vw,480px);border:0}
 .autumn-guide-route-link,.uji-route-map-link{display:block;cursor:pointer;transition:opacity .2s ease}
 .autumn-guide-route-link:hover,.uji-route-map-link:hover{opacity:.88}
 .autumn-guide-route-link:focus-visible,.uji-route-map-link:focus-visible{outline:2px solid currentColor;outline-offset:4px}
