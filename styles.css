@@ -324,6 +324,23 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
   .home-journal-categories a:hover .home-journal-category-arrow{transform:translateX(4px)}
 }
 
+.home-review-preview{background:var(--paper2)}
+.home-review-preview .section-heading{margin-bottom:48px}
+.home-review-grid{grid-template-columns:repeat(3,minmax(0,1fr));max-width:1180px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.home-review-grid .review{min-width:0;padding:44px 34px 42px}
+.home-review-grid .review blockquote{display:flex;flex:1;margin:0;min-width:0}
+.home-review-grid .review blockquote p{display:-webkit-box;margin-bottom:30px;overflow:hidden;overflow-wrap:anywhere;-webkit-box-orient:vertical;-webkit-line-clamp:4}
+.home-review-grid .home-review-stars{flex:0;margin:0 0 20px;color:var(--wood);font-family:var(--sans);font-size:10px;line-height:1;letter-spacing:.18em}
+.home-review-grid .review footer{display:flex;flex-direction:column;gap:4px;line-height:1.5}
+.home-review-grid .review footer strong{color:var(--ink);font-size:12px;font-weight:650;letter-spacing:.06em;text-transform:none}
+.home-review-grid .review footer span,.home-review-grid .review footer time{display:block}
+.home-review-link{font-size:14px}
+.home-review-link>span{display:inline-block;transition:transform .2s ease}
+@media(hover:hover){
+  .home-review-link:hover{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px}
+  .home-review-link:hover>span{transform:translateX(4px)}
+}
+
 .article-shell{max-width:1050px;margin:auto;padding:112px 6vw 120px}
 .article-header{max-width:800px;margin:0 auto 62px;text-align:center}
 .article-header h1{margin:18px 0 24px;font-family:var(--serif);font-size:clamp(42px,5.3vw,74px);line-height:1.06;font-weight:500;letter-spacing:-.025em}
@@ -765,6 +782,8 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
   .stay-guide-slow .stay-guide-photo{order:2}
   .stay-decision-grid,.stay-corridor-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .home-journal-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .home-review-grid{grid-template-columns:1fr}
+  .home-review-grid .review+.review{border-top:1px solid var(--line);border-left:0}
 }
 
 @media(max-width:700px){
@@ -807,6 +826,9 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
   .home-journal-categories{grid-template-columns:1fr}
   .home-journal-categories a{padding:17px 10px}
   .home-journal-categories a+a{border-top:1px solid var(--line);border-left:0}
+  .home-review-preview{padding-top:76px;padding-bottom:82px}
+  .home-review-preview .section-heading{margin-bottom:34px}
+  .home-review-grid .review{padding:34px 8px 36px}
 }
 /* Journal intro — tighter spacing */
 
