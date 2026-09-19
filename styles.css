@@ -386,6 +386,30 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
 .restaurant-map-link:focus-visible{outline:2px solid currentColor;outline-offset:3px}
 @media(hover:hover){.restaurant-map-link:hover{border-color:#b8aa9c;background:rgba(255,255,255,.68);color:#342d28}}
 
+/* Fast food guide */
+.fast-food-place{margin:34px 0;padding:30px;border:1px solid var(--line);background:rgba(255,255,255,.24)}
+.fast-food-place h3{margin:5px 0 15px;font-family:var(--serif);font-size:25px;line-height:1.25;font-weight:500}
+.fast-food-place p{margin:0}
+.fast-food-place p+p{margin-top:14px}
+.fast-food-place__eyebrow{color:var(--wood);font-family:var(--sans);font-size:10px;line-height:1.5;letter-spacing:.14em;text-transform:uppercase}
+.fast-food-place__location{color:var(--muted);font-size:13px;line-height:1.65}
+.fast-food-place__links{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.fast-food-place__links .restaurant-map-link{margin-top:0}
+.fast-food-map{margin-top:28px}
+.fast-food-map figcaption{margin-top:12px;color:var(--muted);font-size:11px;line-height:1.6;letter-spacing:.04em}
+.fast-food-map__image{display:block;transition:opacity .2s ease}
+.fast-food-map__image img{display:block;width:100%;height:auto;border:1px solid var(--line)}
+.fast-food-map__image:focus-visible{outline:2px solid currentColor;outline-offset:4px}
+@media(hover:hover){.fast-food-map__image:hover{opacity:.88}}
+.fast-food-collage-hero__grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px;aspect-ratio:16/7;overflow:hidden;background:var(--line)}
+.fast-food-collage-hero__item{position:relative;min-width:0;overflow:hidden;background:#d9cfc1}
+.fast-food-collage-hero__item img{width:100%;height:100%;max-height:none;object-fit:cover}
+.fast-food-collage-hero__item--mos img{object-position:45% center}
+.fast-food-collage-hero__item--mcdonalds img{object-position:center 50%}
+.fast-food-collage-hero__item--kfc img{object-position:center center}
+.fast-food-collage-hero__item::after{content:"";position:absolute;inset:auto 0 0;height:38%;background:linear-gradient(transparent,rgba(23,18,14,.62));pointer-events:none}
+.fast-food-collage-hero__item span{position:absolute;z-index:1;right:16px;bottom:14px;left:16px;color:#fff;font-family:var(--sans);font-size:11px;font-weight:600;letter-spacing:.12em;text-shadow:0 1px 8px rgba(0,0,0,.45);text-transform:uppercase}
+
 /* Uji journey route map */
 .article-route-map{margin:70px 0}
 .article-route-map img,.journal-card img.uji-route-map-image{width:100%;height:auto;object-fit:contain}
@@ -563,6 +587,12 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
 }
 
 @media(max-width:560px){
+  .fast-food-collage-hero__grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:1.15fr 1fr;aspect-ratio:1/1.06}
+  .fast-food-collage-hero__item--mos{grid-column:1/-1}
+  .fast-food-collage-hero__item--mos img{object-position:40% center}
+  .fast-food-collage-hero__item--mcdonalds img{object-position:center 50%}
+  .fast-food-collage-hero__item--kfc img{object-position:center center}
+  .fast-food-collage-hero__item span{right:11px;bottom:9px;left:11px;font-size:9px;letter-spacing:.09em}
   .faq-hero{padding:46px 6.5vw 58px}
   .faq-hero h1{font-size:clamp(39px,11vw,50px);line-height:.91}
   .faq-intro{margin-top:24px;font-size:16px;line-height:1.72}
