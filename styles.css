@@ -625,6 +625,7 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
   .article-route-map{margin:54px 0}
   .uji-article-list{padding-left:20px}
   .uji-related-links{width:calc(100% + 20px);margin-top:44px;margin-left:-10px;font-size:15px}
+  .uji-related-link-phrase{white-space:normal}
   .kyoto-itinerary{width:80%;margin:50px auto;padding:27px 16px 26px}
   .kyoto-itinerary header{margin-bottom:25px}
   .kyoto-itinerary-kicker{margin-bottom:9px;font-size:8px}
