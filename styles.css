@@ -325,6 +325,11 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
 .home-journal-categories span{color:var(--muted);font-size:13px;line-height:1.65}
 .home-journal-categories .home-journal-category-arrow{display:inline-block;margin-left:4px;color:inherit;font-family:var(--sans);font-size:.72em;transition:transform .2s ease}
 .home-journal-more .text-link{margin-top:31px;font-size:14px}
+.travel-destination-index{margin-bottom:56px;padding-right:5vw;padding-left:5vw}
+.travel-destination-index .home-journal-categories{grid-template-columns:repeat(4,minmax(0,1fr));max-width:1180px}
+.travel-destination-index .home-journal-categories a{padding-right:22px;padding-left:22px}
+.travel-destination-index .home-journal-categories strong{font-size:20px;line-height:1.25}
+.travel-destination-index + .journal-list .journal-card[id]{scroll-margin-top:28px}
 @media(hover:hover){
   .home-journal-grid .journal-card:hover{background:#f0e9de;transform:translateY(-3px)}
   .home-journal-categories a:hover strong{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px}
@@ -603,6 +608,9 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
   .subpage-header .nav-panel{top:66px;background:rgba(251,248,242,.98);border:1px solid var(--line)}
   .menu-button--dark{border-color:var(--line);background:transparent;color:var(--ink)}
   .journal-grid{grid-template-columns:1fr}
+  .travel-destination-index .home-journal-categories{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .travel-destination-index .home-journal-categories a:nth-child(3){border-left:0}
+  .travel-destination-index .home-journal-categories a:nth-child(n+3){margin-top:24px;padding-top:24px;border-top:1px solid var(--line)}
   .faq-hero{padding-top:58px;padding-bottom:68px}
   .faq-list{padding-bottom:88px}
   .faq-item summary{padding-top:32px;padding-bottom:32px}
@@ -610,6 +618,11 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
 }
 
 @media(max-width:560px){
+  .travel-destination-index{margin-top:40px;margin-bottom:42px;padding-right:6.5vw;padding-left:6.5vw}
+  .travel-destination-index .home-journal-categories{grid-template-columns:1fr}
+  .travel-destination-index .home-journal-categories a{padding:20px 0}
+  .travel-destination-index .home-journal-categories a+a{margin-top:0;border-top:1px solid var(--line);border-left:0}
+  .travel-destination-index .home-journal-categories a:nth-child(n+3){margin-top:0;padding-top:20px}
   .fast-food-collage-hero__grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:1.15fr 1fr;aspect-ratio:1/1.06}
   .fast-food-collage-hero__item--mos{grid-column:1/-1}
   .fast-food-collage-hero__item--mos img{object-position:40% center}
