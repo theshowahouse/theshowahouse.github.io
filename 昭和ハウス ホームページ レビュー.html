@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>昭和ハウス ホームページ レビュー｜2026年11月12日更新</title>
+  <style>
+    :root {
+      --paper: #f4efe5;
+      --paper-deep: #e9dfcf;
+      --ink: #29251f;
+      --muted: #6d655b;
+      --line: #cfc3b2;
+      --rust: #9b4c32;
+      --rust-soft: #efe0d7;
+      --green: #46604e;
+      --green-soft: #e4ebe4;
+      --white: #fffdf8;
+      --shadow: 0 20px 50px rgba(57, 45, 31, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "Noto Sans JP", sans-serif;
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: var(--rust); text-underline-offset: 0.18em; }
+    a:hover { text-decoration-thickness: 2px; }
+
+    .page {
+      width: min(1120px, calc(100% - 40px));
+      margin: 28px auto;
+      background: var(--white);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+    }
+
+    .masthead {
+      position: relative;
+      padding: clamp(38px, 7vw, 82px);
+      border-bottom: 1px solid var(--line);
+      overflow: hidden;
+    }
+
+    .masthead::after {
+      content: "";
+      position: absolute;
+      right: -80px;
+      bottom: -110px;
+      width: 330px;
+      height: 330px;
+      border: 1px solid rgba(155, 76, 50, 0.2);
+      border-radius: 50%;
+    }
+
+    .eyebrow {
+      margin: 0 0 14px;
+      color: var(--rust);
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    h1, h2, h3 {
+      font-family: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif;
+      font-weight: 600;
+      line-height: 1.38;
+    }
+
+    h1 {
+      max-width: 760px;
+      margin: 0;
+      font-size: clamp(2rem, 5vw, 4.2rem);
+      letter-spacing: -0.03em;
+    }
+
+    .subtitle {
+      max-width: 760px;
+      margin: 20px 0 0;
+      color: var(--muted);
+      font-size: clamp(1rem, 2vw, 1.2rem);
+    }
+
+    .meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 24px;
+      margin-top: 30px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .summary {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .summary-copy,
+    .score-panel {
+      padding: clamp(30px, 5vw, 56px);
+    }
+
+    .score-panel {
+      display: grid;
+      align-content: center;
+      justify-items: center;
+      background: var(--ink);
+      color: var(--white);
+      text-align: center;
+    }
+
+    .score {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(4rem, 9vw, 7.5rem);
+      line-height: 0.9;
+    }
+
+    .score small {
+      font-family: inherit;
+      font-size: 0.24em;
+      color: #d9cfbf;
+    }
+
+    .score-label {
+      margin: 18px 0 0;
+      color: #e8dfd2;
+      font-size: 0.82rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    .section {
+      padding: clamp(38px, 6vw, 72px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .section:last-child { border-bottom: 0; }
+
+    .section-heading {
+      display: grid;
+      grid-template-columns: minmax(180px, 0.38fr) minmax(0, 1fr);
+      gap: 28px;
+      align-items: start;
+      margin-bottom: 30px;
+    }
+
+    .section-heading h2 {
+      margin: 0;
+      font-size: clamp(1.5rem, 3vw, 2.4rem);
+    }
+
+    .section-heading p { margin: 0; color: var(--muted); }
+
+    .callout {
+      padding: 22px 24px;
+      background: var(--rust-soft);
+      border-left: 4px solid var(--rust);
+    }
+
+    .callout p { margin: 0; }
+    .callout p + p { margin-top: 10px; }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 1px;
+      background: var(--line);
+      border: 1px solid var(--line);
+    }
+
+    .metric {
+      min-width: 0;
+      padding: 20px;
+      background: var(--white);
+    }
+
+    .metric strong {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--rust);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.9rem;
+      line-height: 1;
+    }
+
+    .metric span { color: var(--muted); font-size: 0.82rem; }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      padding: 24px;
+      border: 1px solid var(--line);
+      background: #fffefa;
+    }
+
+    .card h3 { margin: 0 0 10px; font-size: 1.14rem; }
+    .card p { margin: 0; color: var(--muted); }
+    .card p + p { margin-top: 10px; }
+
+    .status {
+      display: inline-block;
+      margin-bottom: 12px;
+      padding: 3px 9px;
+      border-radius: 999px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+    }
+
+    .status.good { color: var(--green); background: var(--green-soft); }
+    .status.watch { color: #7a4526; background: #f4e4d7; }
+    .status.unknown { color: #555; background: #e9e7e2; }
+
+    .table-wrap { overflow-x: auto; border: 1px solid var(--line); }
+
+    table {
+      width: 100%;
+      min-width: 720px;
+      border-collapse: collapse;
+      font-size: 0.91rem;
+    }
+
+    th, td {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--paper-deep);
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    tr:last-child td { border-bottom: 0; }
+
+    .priority-list {
+      display: grid;
+      gap: 18px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: priority;
+    }
+
+    .priority-list li {
+      position: relative;
+      padding: 24px 24px 24px 76px;
+      border: 1px solid var(--line);
+      counter-increment: priority;
+    }
+
+    .priority-list li::before {
+      content: counter(priority, decimal-leading-zero);
+      position: absolute;
+      left: 24px;
+      top: 20px;
+      color: var(--rust);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.5rem;
+    }
+
+    .priority-list h3 { margin: 0 0 7px; font-size: 1.08rem; }
+    .priority-list p { margin: 0; color: var(--muted); }
+    .priority-list p + p { margin-top: 8px; }
+
+    .tag {
+      display: inline-block;
+      margin-right: 8px;
+      color: var(--rust);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+    }
+
+    .checks {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 24px;
+    }
+
+    .check {
+      padding: 18px;
+      background: var(--green-soft);
+      color: var(--green);
+    }
+
+    .check strong { display: block; margin-bottom: 4px; }
+
+    .references {
+      margin: 0;
+      padding-left: 1.25em;
+      columns: 2;
+      column-gap: 36px;
+    }
+
+    .references li {
+      margin-bottom: 8px;
+      break-inside: avoid;
+      overflow-wrap: anywhere;
+    }
+
+    .footnote {
+      margin-top: 28px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.84rem;
+    }
+
+    @media (max-width: 820px) {
+      .summary,
+      .section-heading { grid-template-columns: 1fr; }
+      .metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .metric:last-child { grid-column: 1 / -1; }
+      .checks { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 620px) {
+      .page { width: 100%; margin: 0; border-left: 0; border-right: 0; }
+      .masthead, .section, .summary-copy, .score-panel { padding: 30px 20px; }
+      .cards, .metrics { grid-template-columns: 1fr; }
+      .metric:last-child { grid-column: auto; }
+      .priority-list li { padding: 62px 20px 22px; }
+      .priority-list li::before { left: 20px; top: 18px; }
+      .references { columns: 1; }
+      .meta-row { display: grid; gap: 4px; }
+    }
+
+    @media print {
+      body { background: #fff; }
+      .page { width: 100%; margin: 0; border: 0; box-shadow: none; }
+      a { color: inherit; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="masthead">
+      <p class="eyebrow">Website Review · Updated Edition</p>
+      <h1>昭和ハウス<br>ホームページ レビュー</h1>
+      <p class="subtitle">海外旅行者への情報価値、予約済みゲストへの実用性、検索流入、ブランドの伝わり方、宿泊導線を、現在の公開サイトに基づいて再評価しました。</p>
+      <div class="meta-row">
+        <span>調査日：2026年11月12日</span>
+        <span>対象：https://theshowahouse.github.io/</span>
+        <span>公開HTML 36ファイルを確認</span>
+      </div>
+    </header>
+
+    <section class="summary" aria-labelledby="summary-title">
+      <div class="summary-copy">
+        <p class="eyebrow">総評</p>
+        <h2 id="summary-title">宿の物語と、滞在中に本当に役立つ地域情報が、ひとつの編集方針でつながっています。</h2>
+        <p>現在のサイトは、宿泊施設の販売ページにとどまらず、「日本の日常を数日暮らすように体験する」という価値を、家の物語、実用ガイド、地域の散策、食事・買い物情報まで一貫して伝えています。</p>
+        <p>特に、Stay Guide・Travel Guide・Life in Japanの役割分担、石清水八幡宮と背割堤を地元のおすすめとして扱う構成、レストランと買い物の具体的な案内は、予約前の読者にも予約済みゲストにも有用です。Airbnbへの導線も押し売りにならず、主要ページで確保されています。</p>
+        <p>大きな再設計は不要です。今後は、更新情報を検索エンジンへ正しく伝える保守、可変情報の定期確認、少数の記事での関連導線の微調整を優先する段階です。</p>
+      </div>
+      <div class="score-panel" aria-label="総合評価 88点">
+        <p class="score">88<small>/100</small></p>
+        <p class="score-label">Current Overall Score</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="scope-title">
+      <div class="section-heading">
+        <h2 id="scope-title">調査範囲と前提</h2>
+        <p>公開ページ、公開HTMLとローカルHTMLの一致、内部リンク、主要な外部導線、検索向けの基本設定を確認しました。</p>
+      </div>
+      <div class="callout">
+        <p><strong>確認できた範囲：</strong>トップページ、A Week at The Showa House、Stay Guide、Travel Guide、Life in Japan、Guest Reviews、Access、FAQ、Journal一覧と22本の記事、Airbnb予約導線、robots.txt、sitemap.xml、主要なcanonical・title・meta description・構造化データです。</p>
+        <p><strong>比較上の制約：</strong>指定名の旧レビューHTMLは、現在の作業フォルダ、Downloads、Documents、Desktop、Git履歴から確認できませんでした。そのため、旧資料の文章単位の差分比較ではなく、2026年11月12日時点の公開サイトを基準にした更新版として整理しています。</p>
+      </div>
+      <div class="metrics" aria-label="確認したサイト規模">
+        <div class="metric"><strong>22</strong><span>Journal記事</span></div>
+        <div class="metric"><strong>32</strong><span>sitemap掲載URL</span></div>
+        <div class="metric"><strong>36</strong><span>確認したHTML</span></div>
+        <div class="metric"><strong>36</strong><span>掲載ゲストレビュー</span></div>
+        <div class="metric"><strong>34</strong><span>Airbnbリンクを持つHTML</span></div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="changes-title">
+      <div class="section-heading">
+        <h2 id="changes-title">現在の評価で重要な更新点</h2>
+        <p>過去の評価で問題になりやすかった「宿の基本情報」「記事の分類」「地域情報」「予約導線」は、現在かなり整っています。</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <span class="status good">改善済みとして評価</span>
+          <h3>トップページの基本情報</h3>
+          <p>Entire private house、1〜2名、畳と布団、Kitchen and Wi-Fi、京阪樟葉駅から徒歩約10分、京都・大阪へのアクセスが、Stay Essentialsの6項目で簡潔に確認できます。</p>
+        </article>
+        <article class="card">
+          <span class="status good">改善済みとして評価</span>
+          <h3>情報設計と記事の入口</h3>
+          <p>Stay Guide、Travel Guide、Life in Japanの3分類が明確です。Travel Guideには目的地別ナビゲーションがあり、石清水八幡宮・地元、京都中心部、宇治、奈良を探しやすくしています。</p>
+        </article>
+        <article class="card">
+          <span class="status good">新しい強み</span>
+          <h3>地元ならではの観光価値</h3>
+          <p>石清水八幡宮と背割堤を隣り合わせで紹介し、男山、森、石灯籠、川沿いの散策、自転車での楽しみ方まで、The Showa Houseから地域を体験する流れを作っています。</p>
+        </article>
+        <article class="card">
+          <span class="status good">新しい強み</span>
+          <h3>食事・買い物の実用情報</h3>
+          <p>家族が実際に利用する9店舗の飲食店、スーパーマーケット、惣菜店、コンビニを紹介しています。普通のスーパーで寿司を買えることなど、海外旅行者にとっての小さな発見も自然に伝えています。</p>
+        </article>
+        <article class="card">
+          <span class="status good">改善済みとして評価</span>
+          <h3>信頼材料と予約前の不安解消</h3>
+          <p>Guest Reviewsでは36件を掲載し、静かな立地、伝統的な家、アクセス、ホストの対応をテーマ別にも要約しています。FAQは15項目あり、設備、定員、プライバシー、予約方法を確認できます。</p>
+        </article>
+        <article class="card">
+          <span class="status good">改善済みとして評価</span>
+          <h3>予約導線</h3>
+          <p>ナビゲーション、カテゴリ一覧、主要記事末尾、FAQ、AccessにAirbnbリンクがあります。強い販売コピーを繰り返さず、記事を読み終えた場所で自然に次の行動へ進めます。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="page-review-title">
+      <div class="section-heading">
+        <h2 id="page-review-title">ページ別レビュー</h2>
+        <p>直接予約だけでなく、旅行計画、滞在中の実用性、地域文化への関心を含めて評価しています。</p>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>ページ</th><th>現在の役割と良い点</th><th>評価・注意点</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Home</td><td>大叔母の家の物語、「Not a hotel. A home to remember.」、宿泊基本情報、写真、Journal、レビューが自然につながっています。</td><td><span class="status good">良好</span> 世界観を壊す大幅変更は不要です。</td></tr>
+            <tr><td>Stay Guide</td><td>到着日の過ごし方、朝の散歩、ファストフード、家族のおすすめ店、弁当・買い物をまとめています。</td><td><span class="status good">非常に実用的</span> 予約済みゲストにも価値があります。</td></tr>
+            <tr><td>Travel Guide</td><td>有名観光地と地元の魅力を同じ視認性で紹介し、目的地別ナビゲーションと2列カードで整理しています。</td><td><span class="status good">良好</span> 石清水八幡宮と背割堤の位置づけが明確です。</td></tr>
+            <tr><td>Life in Japan</td><td>昭和の家、布団、靴を脱ぐ文化、普通の暮らしを宿泊体験へ結び付けています。</td><td><span class="status good">独自性が高い</span> 検索記事とブランドストーリーが両立しています。</td></tr>
+            <tr><td>Guest Reviews</td><td>36件を新しい順に掲載し、英語訳と原文、共通テーマを整理しています。</td><td><span class="status good">信頼性を補強</span> 更新日の運用だけ継続確認が必要です。</td></tr>
+            <tr><td>Access</td><td>樟葉駅から徒歩約10分、京都・大阪・宇治・奈良への概算時間、空港からの移動、周辺施設を説明しています。</td><td><span class="status good">判断材料が十分</span> 時間は目安であるとの注記もあります。</td></tr>
+            <tr><td>FAQ</td><td>Wi-Fi、キッチン、2名まで、専用浴室、ホストは別宅、駐車場、子ども、Airbnb予約など15項目を回答しています。</td><td><span class="status good">良好</span> 予約前の主要な不安を抑えています。</td></tr>
+            <tr><td>Journal記事</td><td>京都・大阪・奈良・宇治、地域散策、昭和の暮らし、食事・買い物を個人的な語りで紹介しています。</td><td><span class="status watch">軽微な改善余地</span> 一部記事の関連記事導線は濃淡があります。</td></tr>
+            <tr><td>Airbnb導線</td><td>公開の主要ページから同一のAirbnb room URLへ進め、FAQでも初回予約方法を明示しています。</td><td><span class="status good">到達確認済み</span> 2026年11月12日にHTTP 200を確認しました。</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="audience-title">
+      <div class="section-heading">
+        <h2 id="audience-title">5つの評価観点</h2>
+        <p>予約率だけでは測れないサイトの役割を含め、現在の完成度を見ています。</p>
+      </div>
+      <div class="cards">
+        <article class="card"><h3>海外旅行者への有益性　9/10</h3><p>移動時間、路線、観光の順番、普通の食事・買い物、文化習慣を英語で具体的に説明しています。</p></article>
+        <article class="card"><h3>予約済みゲストへの実用性　9/10</h3><p>到着日、近隣散歩、食事、買い物、FAQ、Accessが、滞在中に参照できる内容になっています。</p></article>
+        <article class="card"><h3>検索からの読者獲得　8/10</h3><p>検索意図の明確な記事、canonical、meta、構造化データ、sitemapがあります。実際の掲載数やクリック率は管理画面での確認が必要です。</p></article>
+        <article class="card"><h3>昭和ハウスの魅力　9.5/10</h3><p>大叔母の家、古い木、畳、布団、普通の住宅街、家族の視点が一貫し、施設スペックだけに還元されていません。</p></article>
+        <article class="card"><h3>記事から宿泊への導線　8.5/10</h3><p>ナビゲーションと記事末尾のAirbnb CTA、Home・Accessへの文脈リンクがあり、押し売り感も抑えられています。</p></article>
+        <article class="card"><h3>保守しやすさ　7.5/10</h3><p>静的HTMLで軽量ですが、記事、店舗、レビュー、sitemapの更新は手作業です。更新チェックを小さく定型化すると安定します。</p></article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="technical-title">
+      <div class="section-heading">
+        <h2 id="technical-title">検索・リンク・公開状態</h2>
+        <p>確認できた事実と、外部管理画面がないため確認できない事項を分けています。</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <span class="status good">確認済み</span>
+          <h3>公開HTMLとローカルHTML</h3>
+          <p>主要ページと全Journal HTMLを直接取得し、現在のローカル版と一致することを確認しました。</p>
+        </article>
+        <article class="card">
+          <span class="status good">確認済み</span>
+          <h3>内部リンク</h3>
+          <p>HTMLコメント内の未公開リンクを除き、ローカルの内部リンク先に欠落は確認されませんでした。</p>
+        </article>
+        <article class="card">
+          <span class="status good">確認済み</span>
+          <h3>検索向け基本設定</h3>
+          <p>robots.txtはクロールを許可し、sitemap.xmlは32 URLを掲載しています。公開対象にはtitle、description、canonical、原則1つのH1があります。</p>
+        </article>
+        <article class="card">
+          <span class="status watch">要保守</span>
+          <h3>sitemapの更新日</h3>
+          <p>記事内容は直近まで更新されていますが、sitemapのlastmodは2026年7〜9月の値が中心です。内容更新時に合わせて更新する運用が望まれます。</p>
+        </article>
+        <article class="card">
+          <span class="status good">スポット確認済み</span>
+          <h3>検索結果への掲載</h3>
+          <p>公開検索ではトップ、Stay Guide、Travel Guide、FAQ、Access、複数のJournal記事が検索結果に現れることを確認しました。</p>
+        </article>
+        <article class="card">
+          <span class="status unknown">未確認</span>
+          <h3>Google全体の掲載状況</h3>
+          <p>Search Consoleのページインデックス、クロール統計、検索クエリ、クリック率、除外理由は、管理画面へのアクセスがないため未確認です。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="issues-title">
+      <div class="section-heading">
+        <h2 id="issues-title">現在も残る課題</h2>
+        <p>サイト全体を作り直す必要はなく、少数の保守・精度改善に絞れます。</p>
+      </div>
+      <div class="cards">
+        <article class="card"><span class="status watch">中</span><h3>更新内容とsitemapのlastmodが同期していない</h3><p>検索順位を直接左右すると断定はできませんが、更新済みページを検索エンジンへ正しく伝える基本保守として整合させる価値があります。</p></article>
+        <article class="card"><span class="status watch">小</span><h3>Tenの冒頭画像altが料理内容と一致しきっていない</h3><p>レストラン記事のヒーローaltは「Soba and tempura lunch」となっていますが、本文側は冷たい蕎麦と明太子のせいろ飯を説明しています。表示上の崩れではなく、代替テキストの精度の問題です。</p></article>
+        <article class="card"><span class="status watch">小</span><h3>店舗リンクの方式が混在している</h3><p>Yakiniku no Kongeriは店舗詳細の直リンクですが、多くの店舗はGoogle Maps検索URLです。現状でも利用できますが、正確な店舗直リンクを確認できる場合だけ順次統一すると安心です。</p></article>
+        <article class="card"><span class="status watch">小</span><h3>関連記事導線の濃淡</h3><p>宇治・奈良・食事記事などは関連記事が豊富ですが、一部記事はカテゴリへ戻るリンクとAirbnb CTAが中心です。検索流入の多い記事から、読者意図に合う1〜2本だけ補う余地があります。</p></article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="priority-title">
+      <div class="section-heading">
+        <h2 id="priority-title">優先改善 上位3項目</h2>
+        <p>費用と管理負担を増やさず、既存情報を活かせる順にしています。</p>
+      </div>
+      <ol class="priority-list">
+        <li>
+          <h3>sitemapのlastmodを実際の更新日に合わせる</h3>
+          <p><span class="tag">優先度：高</span><span class="tag">負担：小</span></p>
+          <p>期待効果：更新した記事やカテゴリページの鮮度を、検索エンジンへより正確に伝えられます。記事公開・更新時のチェックリストに1項目追加するだけで運用できます。</p>
+        </li>
+        <li>
+          <h3>可変情報と外部リンクを定期的にスポット確認する</h3>
+          <p><span class="tag">優先度：中</span><span class="tag">負担：小</span></p>
+          <p>期待効果：Airbnb、Google Maps、飲食店公式サイト、店舗の閉店・移転による案内ミスを防げます。営業時間や価格を固定掲載していない現在の方針は維持し、3〜6か月ごとの短い確認で十分です。</p>
+        </li>
+        <li>
+          <h3>検索入口になっている記事だけ、次に読む1〜2本を点検する</h3>
+          <p><span class="tag">優先度：中</span><span class="tag">負担：小</span></p>
+          <p>期待効果：観光情報を読んだ人が、Access、Life in Japan、地元の石清水八幡宮・背割堤、宿泊体験へ自然に進めます。同じ定型文を全記事へ貼る必要はありません。</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section" aria-labelledby="keep-title">
+      <div class="section-heading">
+        <h2 id="keep-title">変更しない方がよい点</h2>
+        <p>現状の強みを守ることも、改善方針の一部です。</p>
+      </div>
+      <div class="cards">
+        <article class="card"><h3>物語を短くしすぎない</h3><p>大叔母の家、普通だったものが珍しくなった背景、ホストの個人的な視点は、一般的な宿泊サイトとの差別化そのものです。</p></article>
+        <article class="card"><h3>有名観光地だけに寄せない</h3><p>伏見稲荷・清水寺・奈良・宇治への実用性と、石清水八幡宮・背割堤・枚方の日常を両立している点が、宿の立地価値を自然に伝えています。</p></article>
+        <article class="card"><h3>予約CTAを過剰に増やさない</h3><p>現在は常設ナビゲーションと読了後のCTAがあり、十分です。記事途中に販売訴求を増やすと、読み物としての信頼感を損なう可能性があります。</p></article>
+        <article class="card"><h3>価格・営業時間を固定掲載しない</h3><p>変動しやすい情報を避け、Google Mapsで最新情報を確認する案内にしているため、保守負担と誤情報のリスクを抑えています。</p></article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="verification-title">
+      <div class="section-heading">
+        <h2 id="verification-title">検証結果</h2>
+        <p>レビュー作成時点で確認できた技術的な状態です。</p>
+      </div>
+      <div class="checks">
+        <div class="check"><strong>公開一致</strong>公開HTMLとローカルHTMLが一致</div>
+        <div class="check"><strong>内部リンク</strong>有効な内部リンクの欠落なし</div>
+        <div class="check"><strong>主要外部導線</strong>Airbnb・Kongeri公式・MapsがHTTP 200</div>
+      </div>
+      <div class="callout" style="margin-top: 24px;">
+        <p><strong>未確認：</strong>Search ConsoleとGA4の実データ、Airbnbでの予約転換率・空室・料金、全店舗の現地営業状況、実機の全OS・全ブラウザ、アクセシビリティ支援技術による詳細試験です。</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="references-title">
+      <div class="section-heading">
+        <h2 id="references-title">主な参照URL</h2>
+        <p>2026年11月12日に公開内容を確認したページです。</p>
+      </div>
+      <ul class="references">
+        <li><a href="https://theshowahouse.github.io/">Home</a></li>
+        <li><a href="https://theshowahouse.github.io/stay-guide/">Stay Guide</a></li>
+        <li><a href="https://theshowahouse.github.io/travel-guide/">Travel Guide</a></li>
+        <li><a href="https://theshowahouse.github.io/life-in-japan/">Life in Japan</a></li>
+        <li><a href="https://theshowahouse.github.io/guest-reviews.html">Guest Reviews</a></li>
+        <li><a href="https://theshowahouse.github.io/access.html">Access</a></li>
+        <li><a href="https://theshowahouse.github.io/faq.html">FAQ</a></li>
+        <li><a href="https://theshowahouse.github.io/journal/">Journal</a></li>
+        <li><a href="https://theshowahouse.github.io/journal/where-we-like-to-eat.html">Where We Like to Eat</a></li>
+        <li><a href="https://theshowahouse.github.io/journal/where-to-buy-food-near-the-showa-house.html">Bento &amp; Groceries</a></li>
+        <li><a href="https://theshowahouse.github.io/journal/iwashimizu-hachimangu-quiet-half-day-near-kyoto.html">Iwashimizu Hachimangu</a></li>
+        <li><a href="https://theshowahouse.github.io/journal/a-walk-we-recommend-all-year-round.html">Sewaritei</a></li>
+        <li><a href="https://theshowahouse.github.io/sitemap.xml">sitemap.xml</a></li>
+        <li><a href="https://theshowahouse.github.io/robots.txt">robots.txt</a></li>
+      </ul>
+      <p class="footnote">本資料は公開サイトの客観的な現状確認を目的とした内部レビューです。検索順位や予約成果については、Search Console、GA4、Airbnb管理画面の実データと合わせて判断してください。</p>
+    </section>
+  </main>
+</body>
+</html>
