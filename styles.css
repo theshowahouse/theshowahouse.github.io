@@ -164,6 +164,7 @@ a:focus-visible,button:focus-visible{outline:2px solid currentColor;outline-offs
 }
 .stay-essentials-heading .eyebrow{margin:0 0 15px}
 .stay-essentials-heading h2{margin:0;font-family:var(--serif);font-size:clamp(29px,3vw,43px);font-weight:500;line-height:1.12;letter-spacing:-.02em}
+.stay-essentials-intro{margin:24px 0 0;color:#51483f;font-size:15px;line-height:1.78}
 .stay-essentials-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));margin:0;padding:0;border-top:1px solid var(--line);list-style:none}
 .stay-essentials-list li{padding:17px 18px 17px 0;border-bottom:1px solid var(--line);color:#51483f;font-family:var(--serif);font-size:16px}
 .stay-essentials-list li:nth-child(even){padding-left:18px;border-left:1px solid var(--line)}
